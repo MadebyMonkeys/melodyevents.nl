@@ -6,7 +6,7 @@ layout: layouts/base.vto
     <section class="[ contact form ] [ content-grid ] [ region flow ]">
         <h1>{{ contact.title }}</h1>
         {{ contact.body |> md }}
-        <form action="https://formsubmit.co/r.guzel@live.nl" method="POST" class="flow">
+        <form action="https://formsubmit.co/{{site.email}}" method="POST" class="flow">
             <input type="hidden" name="_subject" value="Contact formulier">
             <div class="formgroup">
                 <label for="name">Naam</label>

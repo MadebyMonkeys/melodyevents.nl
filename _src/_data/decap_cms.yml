@@ -27,6 +27,7 @@ collections:
         fields:
           - { name: "name", label: "Name", widget: "string" }
           - { name: "logo", label: "Logo", widget: "image" }
+          - { name: "email", label: "Email", widget: "string" }
           - name: "address"
             label: "Address"
             widget: "object"
