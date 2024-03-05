@@ -1,0 +1,23 @@
+---
+layout: layouts/base.vto
+---
+<main>
+    <section class="[ gallery-list ] [ content-grid ] [ region flow ]">
+        <h1>{{ title }}</h1>
+        <div class="auto-grid" data-rows="masonry">
+            {{ for image of gallery.images }}
+                <a class="gallery-image" href="{{ image.path }}" data-gall="Gallery" data-fitview="true">
+                    <img src="{{ image.path }}" alt="{{ image.alt }}">
+                </a>
+            {{ /for }}
+        </div>
+    </section>
+</main>
+
+<script type="text/javascript" src="/js/venobox.min.js"></script>
+<script>
+    new VenoBox({
+        selector: '.gallery-image',
+        infinigall: true,
+    });
+</script>

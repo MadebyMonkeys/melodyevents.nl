@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+//
+//
+//
+
+@each $prop, $value in $font-sizes-map {
+    .fs-#{$prop} {
+        font-size: #{$value};
+    }
+}

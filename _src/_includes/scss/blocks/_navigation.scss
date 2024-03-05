@@ -1,0 +1,46 @@
+@use "../abstracts" as *;
+
+//
+//
+//
+
+// variables here
+
+
+
+//
+//
+//
+
+.site-nav {
+ background: var(--neutral-200);
+}
+
+//
+//
+//
+
+.site-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+
+.site-nav li ul {
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.site-nav__item {
+    &:hover > ul,
+    ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+}

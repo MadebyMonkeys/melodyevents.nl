@@ -1,0 +1,58 @@
+---
+layout: layouts/base.vto
+---
+
+<main>
+    <section class="[ offerte form ] [ content-grid ] [ region flow ]">
+        <div class="flow mb-xl">
+            <h1>{{ offerte.title }}</h1>
+            {{ offerte.body |> md }}
+        </div>
+        <form action="https://formsubmit.co/r.guzel@live.com" method="POST" class="flow">
+            <div class="formgroup">
+                <label for="naam">Naam</label>
+                <input id="naam" type="text" name="naam" required>
+            </div>
+            <div class="formgroup">
+                <label for="tel">Telefoonnummer</label>
+                <input id="tel" type="text" name="telefoon nummer" required>
+            </div>
+            <div class="formgroup">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required>
+            </div>
+
+            <div class="formgroup">
+                <label for="cultuur">Culturele achtergrond</label> <br>
+                <select name="cultuur" id="cultuur">
+                    <option value="">--Maak een keuze--</option>
+                    <option value="Nederlands">Nederlands</option>
+                    <option value="Turks">Turks</option>
+                    <option value="Marokkaans">Marokkaans</option>
+                    <option value="Afghaans">Afghaans</option>
+                    <option value="Hindoestaans">Hindoestaans</option>
+                    <option value="Overige">Overige</option>
+                </select>
+            </div>
+            <div class="formgroup">
+                <label for="event">Type evenement</label>
+                <input id="event" placeholder="bruiloft, hennafeest, babyshower etc." type="text" name="type evenement" required>
+            </div>
+            <div class="formgroup">
+                <label for="aantal">Maximaal aantal verwachten gasten</label> <br>
+                <input id="aantal" placeholder="300" type="text" name="aantal gasten" required>
+            </div>
+            <div class="formgroup">
+                <label for="datum">Gewenste datum</label> <br>
+                <input id="datum" placeholder="dd-mm-yyyy" type="date" name="datum" required>
+            </div>
+            <input type="hidden" name="_subject" value="Offerte aanvraag">
+            <div class="formgroup">
+                <label for="extra">Toevoegende informatie</label>
+                <textarea name="extra informatie" id="extra" cols="30" rows="10"></textarea>
+            </div>
+            <input type="text" name="_honey" style="display:none">
+            <button class="button" data-type="primary" type="submit">Verzend</button>
+        </form>
+    </section>
+</main>

@@ -1,0 +1,21 @@
+<footer class="[ site-footer ] [] []">
+    <div class="wrapper">
+        <div class="auto-grid">
+            <div>&copy; Copyright 2024 Melody Events</div>
+            <div class="flex-group ai-center">
+                {{ for social of socials.platform }}
+                     <a href="{{ social.url }}">
+                    {{ if social.icon }}
+                        <i class="fa-brands fa-{{social.icon}} fs-600"></i>    
+                    {{ else }}
+                        {{ social.name }}
+                    {{ /if }}
+                    </a>
+                {{ /for }}
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script type="module" src="/js/main.js"></script>

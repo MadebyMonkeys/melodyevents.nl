@@ -1,0 +1,287 @@
+@use "scss/abstracts" as *;
+
+@use "scss/base";
+@use "scss/compositions";
+@use "scss/utilities";
+@use "scss/blocks";
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+p, li, blockquote {
+    max-width: 75ch;
+}
+
+strong, b {
+    font-weight: var(--fw-bold);
+}
+
+small {
+    font-size: var(--fs-300);
+}
+
+
+// -----------------------------------------------------------------------------
+// Heading(s)
+// -----------------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: #{$heading-letter-spacing};
+}
+
+h1 {
+    --font-size: var(--fs-900);
+}
+
+h2 {
+    --font-size: var(--fs-800);
+}
+
+h3 {
+    --font-size: var(--fs-700);
+}
+
+
+.text--center {
+    text-align: center;
+}
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.site-header .logo svg {
+    width: 96px;
+
+    .main {
+        fill: var(--accent-500);
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.auto-grid {
+    width: 100%;
+}
+
+.splide__list > li {
+    max-width: auto;
+}
+
+.splide__pagination__page.is-active {
+    background: var(--accent-400);
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.hero {
+
+    &.full-width-split-screen {
+        --content-region-space: 12.12vmax;
+
+        & > .flow {
+            @include mq(md) {
+                padding-right: var(--size-xl);
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+
+//
+// Features
+//
+.features {
+    & > .auto-grid {
+        --placement: auto-fit;
+        --min-col-size: clamp(20rem, 33%, 24rem);
+        --gap: var(--size-m);
+    }
+
+    .flex-group {
+        justify-content: space-between;
+    }
+}
+
+.feature {
+    --border: none;
+
+    .card__image img {
+        opacity: .75;
+        transition: opacity 500ms ease-in-out, scale 500ms ease;
+    }
+
+    &.card:is(:hover) {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+        .card__image img {
+            opacity: 1;
+            scale: 1.1;
+        }
+    }
+}
+
+//
+// Waarom ons
+//
+.whyus {
+    .auto-grid {
+        --placement: auto-fit;
+        --min-col-size: clamp(16rem, 50dvw, 26rem);
+        --gap: var(--size-xl);
+    }
+}
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.aboutus {
+
+    &.full-width-split-screen > .aboutus__content {
+        align-content: start;
+        @include mq(md) {
+            padding-right: var(--size-2xl);
+            padding-left: 0;
+        }
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Gallerij
+// -----------------------------------------------------------------------------
+
+.gallery-list {
+    .auto-grid {
+        --placement: auto-fill;
+        --min-col-size: clamp(16rem, 33%, 23rem);
+        --gap: var(--size-l);
+    }
+
+    .gallery-image {
+        position: relative;
+        overflow: clip;
+
+        img {
+            transition: 500ms;   
+        }
+
+        &:hover {
+            img {
+                scale: 1.1;
+            }
+        }
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.services .auto-grid {
+    --placement: auto-fill;
+    --min-col-size: clamp(18rem, 33%, 23rem);
+    --gap: var(--size-m);
+}
+
+.service.card {
+    --border: 1px solid var(--neutral-100);
+
+    box-shadow: #{$box-shadow-small};
+    transition: box-shadow 500ms ease;
+
+    .card__image img {
+        opacity: .5;
+        transition: opacity 500ms ease-in-out, scale 500ms ease;
+    }
+
+    &:is(:hover) {
+
+        box-shadow: #{$box-shadow-medium};
+
+        .card__image img {
+            opacity: 1;
+            scale: 1.1;
+        }
+
+        .button {
+            --foreground: var(--neutral-800);
+            --background: var(--accent-400);
+    
+            &:is(:hover) {
+                --foreground: var(--neutral-900);
+                --background: var(--accent-300);
+            }
+    
+            &:is(:active) {
+                --foreground: var(--neutral-950);
+                --background: var(--accent-500);
+            }
+        }
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Contact
+// -----------------------------------------------------------------------------
+
+.form.content-grid,
+.narrow.content-grid {
+    --content-max-width: var(--wrapper-sm);
+    --bleed-max-width: var(--wrapper-md);
+}
+
+.narrow.content-grid {
+    img {
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        width: 100%;
+        border-radius: .75em;
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.socials-list {
+    display: flex;
+    gap: var(--size-s);
+    list-style: none inside;
+    align-items: center;
+
+    &--center {
+        justify-content: center;
+    }
+}
+
+.bg-gradient-gold {
+    background: linear-gradient(45deg, var(--accent-300), var(--accent-600));
+}
+
+.bg-patern {
+    background-image: url("img/patroon.png");
+    background-repeat: repeat;
+}

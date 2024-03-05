@@ -1,0 +1,79 @@
+// -----------------------------------------------------------------------------
+// Global selector reset
+// -----------------------------------------------------------------------------
+
+* {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    
+    &,
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// HTML reset
+// -----------------------------------------------------------------------------
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding-top: 3rem;
+    }
+}
+
+html {
+    color-scheme: dark light;
+    hanging-punctuation: first last;
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Image reset
+// -----------------------------------------------------------------------------
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
+    vertical-align: middle;
+}

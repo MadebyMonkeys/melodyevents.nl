@@ -1,0 +1,9 @@
+layout: layouts/gallery.vto
+
+title: Gallerij
+description: foto gallerij
+
+menu:
+  visible: true
+  title: Gallerij
+  order: 3

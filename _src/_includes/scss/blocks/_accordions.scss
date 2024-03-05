@@ -1,0 +1,79 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+// $accordion-foreground: var(--neutral-600);
+// $accordion-background: var(--neutral-200);
+
+// $accordion-foreground-hover: var(--neutral-600);
+// $accordion-background-hover: var(--neutral-300);
+
+// $accordion-foreground-active: var(--neutral-100);
+// $accordion-background-active: var(--neutral-700);
+
+// $accordion-padding: var(--size-m) var(--size-s);
+
+// $accordion-content-background: white;
+// $accordion-content-padding: var(--size-m);
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.accordion {
+    --_foreground: var(--foreground, #{$accordion-foreground});
+    --_background: var(--background, #{$accordion-background});
+    --_padding: var(--padding, #{$accordion-padding});
+    --_font-weight: var(--font-weight, #{$accordion-font-weight});
+
+    color: var(--_foreground);
+    background: var(--_background);
+    font-weight: var(--_font-weight);
+    text-align: left;
+    width: 100%;
+    padding: var(--_padding);
+    transition: 400ms;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+
+    &:hover {
+        --foreground: #{$accordion-foreground-hover};
+        --background: #{$accordion-background-hover};
+    }
+
+    &.active {
+        --foreground: #{$accordion-foreground-active};
+        --background: #{$accordion-background-active};
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Accordion panel
+// -----------------------------------------------------------------------------
+
+.accordion__panel {
+    max-height: 0;
+    overflow: clip;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+
+// -----------------------------------------------------------------------------
+// Accordion content - needed for padding within the accordion__panel
+// -----------------------------------------------------------------------------
+
+.accordion__content {
+    --_content-background: var(--content-background, #{$accordion-content-background});
+    --_content-padding: var(--content-padding, #{$accordion-content-padding});
+
+    padding: var(--_content-padding);
+    background-color: var(--_content-background);
+}

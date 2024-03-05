@@ -1,0 +1,89 @@
+@use "../abstracts" as *;
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.site-nav {
+    --_order: var(--order, #{$site-nav-order});
+
+    display: none;
+    width: 100%;
+    order: var(--_order);
+
+    @include mq(md) {
+        display: flex;
+        width: auto;
+    }
+
+    &.open {
+        display: block;
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.site-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none inside;
+    margin-top: var(--size-xs);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.site-nav__item {
+    width: 100%;
+
+    @include mq(md) {
+        width: auto;
+
+        &:not(:last-child) {
+            margin-right: var(--size-3xs);
+        }
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.site-nav__link {
+    --_background: var(--background, #{$site-nav-link-background});
+    --_font-weight: var(--font-weight, #{$site-nav-link-font-weight});
+    --_padding: var(--padding, #{$site-nav-link-padding});
+
+    --foreground: #{$site-nav-link-foreground};
+    --text-decoration: none;
+
+    background: var(--_background);
+    display: block;
+    font-weight: var(--_font-weight);
+    line-height: 1;
+    padding: var(--_padding);
+    border-radius: 3px;
+    transition: 500ms ease;
+
+    &:is(:hover, :focus) {
+        --foreground: #{$site-nav-link-foreground-hover};
+        --background: #{$site-nav-link-background-hover};
+    }
+
+    &[aria-current="page"] {
+        --foreground: #{$site-nav-link-foreground-active};
+        --background: #{$site-nav-link-background-active};
+        --font-weight: #{$site-nav-link-font-weight-active};
+    }
+}

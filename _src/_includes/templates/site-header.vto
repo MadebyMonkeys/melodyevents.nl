@@ -1,0 +1,23 @@
+<header class="site-header">
+    <div class="[ site-header__inner ] [ wrapper ]">
+        <a class="logo" href="/">
+        {{ if site.logo }}
+            <img src="{{ site.logo }}" inline />
+        {{ else }}
+            {{ metas.site }}
+        {{ /if }}
+        </a>
+        <nav class="site-nav">
+            <ul class="site-nav__list">
+                {{ for item of search.pages("menu.visible=true", "menu.order") }}
+                <li class="site-nav__item">
+                    <a href="{{ item.url }}" class="site-nav__link" {{ if item.url === url }} aria-current="page"{{ /if }}>{{ item.menu.title }}</a>
+                </li>
+                {{ /for }}
+            </ul>
+        </nav>
+        <label id="hamburgerMenu" class="hamburger-menu">
+            <input type="checkbox">
+        </label>
+    </div>
+</header>

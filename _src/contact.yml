@@ -1,0 +1,13 @@
+layout: layouts/contact.vto
+
+title: Contact
+description: Get in touch
+
+menu:
+  visible: true
+  title: Contact
+  order: 6
+
+contact:
+  title: Contact
+  body: Mocht u verder nog vragen hebben stel deze dan gerust via het onderstaande contact formulier. Wij zullen dan zo spoedig mogelijk contact met u opnemen.

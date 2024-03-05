@@ -1,0 +1,138 @@
+@use "colors" as *;
+@use "typography" as *;
+@use "sizes" as *;
+
+// -----------------------------------------------------------------------------
+// Theme settings
+// -----------------------------------------------------------------------------
+
+$active-theme: $light;
+$enable-media-query-dark-mode: false;
+
+
+
+// -----------------------------------------------------------------------------
+// Global
+// -----------------------------------------------------------------------------
+
+// Gap sizes
+$grid-gap: var(--size-m);
+$flex-group-gap: var(--size-s);
+
+
+// Box Shadows
+$box-shadow-small: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$box-shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$box-shadow-large: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+
+
+// -----------------------------------------------------------------------------
+// Body
+// -----------------------------------------------------------------------------
+
+$body-foreground: var(--neutral-400);
+$body-background: var(--neutral-50);
+
+$body-font-family: var(--ff-base);
+$body-font-size: var(--fs-400);
+$body-font-weight: var(--fw-regular);
+$body-line-height: 1.5;
+
+
+
+// -----------------------------------------------------------------------------
+// Headings
+// -----------------------------------------------------------------------------
+
+$heading-foreground: var(--accent-600);
+
+$heading-font-family: var(--ff-accent);
+$heading-font-size: inherit;
+$heading-font-weight: var(--fw-medium);
+$heading-line-height: 1.1;
+$heading-letter-spacing: 0.03rem;
+
+
+
+
+// -----------------------------------------------------------------------------
+// Anchors / Links
+// -----------------------------------------------------------------------------
+
+// Anchors default
+$link-foreground: var(--accent-400);
+$link-text-decoration: underline;
+$link-line-offset: auto;
+
+// Anchors hover state
+$link-foreground-hover: var(--neutral-950);
+$link-text-decoration-hover: none;
+
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+$site-header-foreground: var(--neutral-400);
+$site-header-background: var(--neutral-0);
+
+$site-header-padding: var(--size-2xs) 0;
+
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+$site-nav-order: 3;
+
+$site-nav-link-foreground: var(--neutral-400);
+$site-nav-link-background: transparent;
+
+$site-nav-link-font-family: var(--ff-base);
+$site-nav-link-font-size: 1rem;
+$site-nav-link-font-weight: var(--fw-regular);
+
+$site-nav-link-padding: var(--size-xs) var(--size-s);
+
+// Hover state
+$site-nav-link-foreground-hover: var(--neutral-500);
+$site-nav-link-background-hover: var(--neutral-100);
+
+// Active state
+$site-nav-link-foreground-active: var(--neutral-50);
+$site-nav-link-background-active: var(--accent-400);
+$site-nav-link-font-weight-active: var(--fw-medium);
+
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+$wrapper-padding-inline: var(--size-s-l);
+$wrapper-max-width: var(--wrapper-lg);
+$wrapper-bleed-max-width: var(--wrapper-xl);
+
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+$accordion-foreground: var(--neutral-400);
+$accordion-background: var(--neutral-100);
+
+$accordion-foreground-hover: var(--neutral-600);
+$accordion-background-hover: var(--neutral-200);
+
+$accordion-foreground-active: var(--neutral-800);
+$accordion-background-active: var(--accent-400);
+
+$accordion-font-weight: var(--fw-medium);
+$accordion-padding: var(--size-m) var(--size-s);
+
+$accordion-content-background: var(--neutral-0);
+$accordion-content-padding: var(--size-m);

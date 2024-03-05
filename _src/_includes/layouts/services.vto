@@ -1,0 +1,13 @@
+---
+layout: layouts/base.vto
+sort_by: order
+---
+<main>
+    <section class="[ services ] [ content-grid ] [ region flow ]">
+        <h1>{{ title }}</h1>
+        <div class="[] [ auto-grid ] []">
+            {{ set services = search.pages("type=service", sort_by + "=asc") }}
+            {{ include "templates/servicesList.vto" }}
+        </div>
+    </section>
+</main>
