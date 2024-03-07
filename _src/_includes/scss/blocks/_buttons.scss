@@ -47,6 +47,7 @@ button {
     font-weight: var(--_font-weight);
     padding: var(--_padding);
     border-radius: var(--_border-radius);
+    border: 1px solid transparent;
     cursor: pointer;
     transition: 300ms ease;
 
@@ -75,5 +76,22 @@ button {
             --foreground: var(--neutral-950);
             --background: var(--accent-500);
         }
+    }
+}
+
+
+
+//
+//
+//
+
+.button--outline {
+    --foreground: white;
+    --background: transparent;
+
+    border-color: currentColor;
+
+    &:is(:hover) {
+        border-color: transparent;
     }
 }

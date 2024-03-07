@@ -7,8 +7,8 @@ backend:
     delete: 'Delete {{collection}} “{{slug}}”'
     uploadMedia: 'Upload “{{path}}”'
     deleteMedia: 'Delete “{{path}}”'
-media_folder: /_src/static/img/uploads
-public_folder: /img/uploads
+media_folder: /_src/static/img/upload
+public_folder: /img/upload
 collections:
   - name: settings
     label: Settings
@@ -27,6 +27,10 @@ collections:
           - name: logo
             label: Logo
             widget: image
+            default: /img/logo.svg
+          - name: email
+            label: Email
+            widget: string
           - name: address
             label: Address
             widget: object
@@ -89,7 +93,7 @@ collections:
         label: gallery
         create: true
         file: /_src/_data/gallery.yml
-        public_folder: /img/uploads
+        public_folder: /img/upload
         fields:
           - name: images
             label: Images

@@ -10,8 +10,8 @@ backend:
 
 # publish_mode: editorial_workflow
 
-media_folder: /_src/static/img/uploads
-public_folder: /img/uploads
+media_folder: "/_src/static/img/upload"
+public_folder: "/img/upload"
 
 collections:
   - name: "settings"
@@ -26,7 +26,7 @@ collections:
         file: "/_src/_data/site.yml"
         fields:
           - { name: "name", label: "Name", widget: "string" }
-          - { name: "logo", label: "Logo", widget: "image" }
+          - { name: "logo", label: "Logo", widget: "image", default: "/img/logo.svg" }
           - { name: "email", label: "Email", widget: "string" }
           - name: "address"
             label: "Address"
@@ -77,7 +77,7 @@ collections:
         label: "gallery"
         create: true
         file: "/_src/_data/gallery.yml"
-        public_folder: "/img/uploads"
+        public_folder: "/img/upload"
         fields:
           - name: "images"
             label: "Images"
