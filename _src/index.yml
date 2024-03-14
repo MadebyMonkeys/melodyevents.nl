@@ -1,8 +1,6 @@
 layout: layouts/home.vto
-
 title: Homepage
 description: frontpage description
-
 menu:
   visible: true
   title: Home
@@ -10,27 +8,22 @@ menu:
 
 hero:
   title: Evenementen die onvergetelijk zijn.
-  body: Melody events is een evenementen locatie gelegen in Tilburg, met een ruimte van 120m<small><sup>2</sup></small> verzorgen wij graag de zaal voor uw evenement(en).
+  body: Melody events is een evenementen locatie gelegen in Tilburg, met een
+    ruimte van 120m<small><sup>2</sup></small> verzorgen wij graag de zaal voor
+    uw evenement(en).
   image: https://images.unsplash.com/flagged/photo-1566755395267-86735b23d097?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-
-# features:
-#   - title: Huwelijken
-#     content: Creëer onvergetelijke herinneringen in een charmante omgeving perfect voor uw speciale dag.
-#     image: https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?q=80&w=2024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-#   - title: Zakelijke evenementen
-#     content: Bent u op zoek naar een plek voor een congres, seminarie, beurs of bedrijfsfeest?
-#     image: https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-#   - title: Overige evenementen
-#     content: Heeft u een andere idee voor een feest/evenement, neem dan contact met ons op.
-#     image: https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-
 whyus:
   title: Waarom kiezen voor Melody events
-  content: Mocht u er nog niet van overtuigd zijn om voor ons te kiezen zie dan hiernaast vind u een aantal redenen waarom voor ons te kiezen.
+  content: Mocht u er nog niet van overtuigd zijn om voor ons te kiezen zie dan
+    hiernaast vind u een aantal redenen waarom voor ons te kiezen.
   panels:
     - title: Aangekleden ruimte
-      text: Onze ruimte is volledig aangekleed en klaar voor gebruik kortom ideaal voor uw feesten
+      text: Onze ruimte is volledig aangekleed en klaar voor gebruik kortom ideaal
+        voor uw feesten
     - title: Catering in huis
-      text: Wij zijn voorzien van een eigen keuken met welke wij u kunnen voorzien van onze turkse specialiteiten dit is uitermaten geschikt voor de hongerige feest vierders die na al dat dansen een eetlust hebben opgewekt.
+      text: Wij zijn voorzien van een eigen keuken met welke wij u kunnen voorzien van
+        onze turkse specialiteiten dit is uitermaten geschikt voor de hongerige
+        feest vierders die na al dat dansen een eetlust hebben opgewekt.
     - title: Gratis parkeer ruimte
-      text: Letterlijk naast onze locatie ligt een grote parkeerterrein waar u en uw mede feestvierders gratis hun auto's kunnen parkeren.
+      text: Letterlijk naast onze locatie ligt een grote parkeerterrein waar u en uw
+        mede feestvierders gratis hun auto's kunnen parkeren.

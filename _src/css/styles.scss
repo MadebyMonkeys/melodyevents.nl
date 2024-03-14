@@ -107,6 +107,11 @@ h3 {
 // Features
 //
 .features {
+
+    background: var(--accent-500) url("../img/patroon.svg");
+    background-repeat: repeat;
+    background-size: auto;
+
     & > .auto-grid {
         --placement: auto-fit;
         --min-col-size: clamp(20rem, 33%, 24rem);

@@ -11,25 +11,7 @@ sort_by: order
         </div>
         <img src="{{ image }}" alt="{{about.title}}">
     </section>
-    <section class="[ features ] [ content-grid ] [ region bg-gradient-gold flow ]">
-        <div class="flex-group ai-center">
-            <h2 class="text-neutral-0">{{ features.title }}</h2>
-            <a href="{{ features.link }}" class="button">Alle diensten</a>
-        </div>
-        <div class="[ auto-grid ] [ ]">
-            {{ for feature of features.list }}
-            <div class="[ feature card ]">
-                <div class="card__image">
-                    <img src="{{ feature.image }}" alt="" />
-                </div>
-                <div class="card__content flow">
-                    <h4 class="fs-600 card__title">{{ feature.title }}</h4>
-                    <p>{{ feature.content }}</p>
-                </div>
-            </div>    
-            {{ /for }}
-        </div>
-    </section>
+    {{ include "partials/features.vto" }}
 </main>
 
 

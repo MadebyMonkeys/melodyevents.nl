@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: MadebyMonkeys/melody-events
   branch: main
   commit_message:
     create: 'Create {{colledtion}} “{{slug}}”'
@@ -162,6 +163,9 @@ collections:
               - name: body
                 label: Body
                 widget: markdown
+              - name: image
+                label: Image
+                widget: image
       - name: offerte
         label: Offerte
         file: /_src/offerte.yml
