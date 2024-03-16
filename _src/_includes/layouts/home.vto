@@ -1,31 +1,34 @@
 ---
-layout: ./base.vto
+layout: layouts/base.vto
 ---
-<main class="page-home">
-    <section class="[ hero ] [ full-width-split-screen ] [ ]">
-        <div class="flow">
-            <h1>{{ hero.title }}</h1>
-            {{ hero.body |> md }}
+
+<main class="[] [ content-grid ] []">
+    <section class="[ hero ] [ full-width ] [ region ]">
+        <img class="hero__image [ full-width ]" src="{{ hero.image |> url }}">
+        <div class="hero__content">
+            <h1 class="text--center">{{ hero.title }}</h1>
         </div>
-        <img src="{{ hero.image }}" alt="">
+    </section>
+    <section class="[ about-block ] [ content-grid ] [ region | flow ]">
+        <h2>{{ about.title }}</h2>
+        {{ about.body |> md }}
     </section>
     {{ include "partials/features.vto" }}
-    <section class="[ whyus ] [ content-grid ] [ region ]">
-        <div class="auto-grid ai-center">
-            <div class="flow">
+    <section class="[ whyus ] [ region ]">
+        <div class="auto-grid">
+            <div class="[ whyus-content ] [ flow ]">
                 <h2>{{ whyus.title }}</h2>
                 {{ whyus.content |> md }}
             </div>
-
-            <div>
+            <div clas="accordion-list">
             {{ for item of whyus.panels }}
                 {{ comp.accordion({ title: item.title, text: item.text, active: item.active }) }}
             {{ /for }}
             </div>
         </div>
     </section>
-    <section class="splide" role="group" aria-label="gallery-carousel">
-        <div class="splide__track">
+    <section class="splide [ full-width ]" role="group" aria-label="gallery-carousel">
+        <div class="splide__track full-width">
             <ul class="splide__list">
                 {{ for item of gallery.images }}
                 <li class="splide__slide">
