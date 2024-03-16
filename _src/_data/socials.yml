@@ -1,12 +1,10 @@
 platform:
-  - name: facebook
+  - name: Facebook
     icon: square-facebook
     url: https://facebook.com/
-
-  - name: instagram
+  - name: Instagram
     icon: square-instagram
     url: https://instagram.com/
-
-  - name: twitter
+  - name: X
     icon: square-x-twitter
     url: https://twitter.com/
