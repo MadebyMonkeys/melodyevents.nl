@@ -7,7 +7,7 @@
         {{ for feature of features.list }}
         <div class="[ feature card ]">
             <div class="card__image">
-                <img src="{{ feature.image }}" alt="" />
+                <img loading="lazy" src="{{ feature.image }}" alt="{{ feature.title }}" />
             </div>
             <div class="card__content flow">
                 <h4 class="fs-600 card__title">{{ feature.title }}</h4>
