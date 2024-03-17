@@ -8,10 +8,9 @@ $hamburger-foreground: var(--neutral-400);
 $hamburger-background: transparent;
 
 $hamburger-gap: 4px;
-$hamburger-height: calc((var(--_bar-height) * 3) + (var(--_gap) * 2));
-$hamburger-padding: var(--size-2xs) var(--size-xs);
+$hamburger-padding: 0;
 
-$hamburger-animation-timing: 200 ease-in-out;
+$hamburger-animation-timing: 200ms ease-in-out;
 
 // Hamburger bar(s)
 $hamburger-bar-color: var(--neutral-400);
@@ -23,7 +22,7 @@ $hamburger-bar-height: 4px;
 // -----------------------------------------------------------------------------
 
 .hamburger-menu {
-    --_height: var(--height, #{$hamburger-height});
+    --_height: calc(var(--_bar-height) * 3 + var(--_gap) * 2);
     --_padding: var(--padding, #{$hamburger-padding});
     --_gap: var(--gap, #{$hamburger-gap});
     --_x-width: calc(var(--_height) * 1.41421356237);

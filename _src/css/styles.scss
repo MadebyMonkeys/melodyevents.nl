@@ -43,11 +43,6 @@ h3 {
 }
 
 
-.text--center {
-    text-align: center;
-}
-
-
 // -----------------------------------------------------------------------------
 //
 // -----------------------------------------------------------------------------
@@ -63,86 +58,49 @@ h3 {
 
 
 // -----------------------------------------------------------------------------
-//
+// HOME PAGE
 // -----------------------------------------------------------------------------
 
 .hero {
     --region-space: 12.12vmax;
 
-    background: var(--accent-200);
     position: relative;
-    overflow: clip;
-
-    &__content {
-        --foreground: white;
-
-        z-index: 2;
-
-        h1 {
-            text-shadow: 2px 2px 8px var(--accent-800);  
-        }
-    }
+    overflow: hidden;
 
     &__image {
         position: absolute;
-        content: '';
+        left: 0;
+        top: 0;
         width: 100%;
         height: 100%;
-        z-index: 1;
-        opacity: .85;
-        object-fit: cover;
-    }
-}
 
-
-// -----------------------------------------------------------------------------
-//
-// -----------------------------------------------------------------------------
-
-.auto-grid {
-    width: 100%;
-}
-
-.splide__list > li {
-    max-width: auto;
-}
-
-.splide__pagination__page.is-active {
-    background: var(--accent-400);
-}
-
-.splide__slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    aspect-ratio: 16/9;
-}
-
-// -----------------------------------------------------------------------------
-//
-// -----------------------------------------------------------------------------
-
-.hero {
-
-    &.full-width-split-screen {
-        --content-region-space: 12.12vmax;
-
-        & > .flow {
-            @include mq(md) {
-                padding-right: var(--size-xl);
-                padding-left: 0;
-            }
+        img {
+            opacity: 0.6;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
+
+    &__content {
+        position: relative;
+    }
+}
+
+.hero__content .title {
+    --foreground: white;
+    text-shadow: 2px 2px 8px var(--accent-800);
 }
 
 
+
 //
+// About
 //
-//
-.about-block {
-    --_content-max-width: var(--wrap-size-sm);
+.about-block.content-grid {
+    --_content-max-width: var(--wrapper-sm);
 }
+
 
 
 //
@@ -183,8 +141,10 @@ h3 {
     }
 }
 
+
+
 //
-// Waarom ons
+// Why us
 //
 .whyus {
     .auto-grid {
@@ -194,8 +154,29 @@ h3 {
     }
 }
 
-// -----------------------------------------------------------------------------
+
+
 //
+// Carousel
+//
+.splide__list > li {
+    max-width: auto;
+}
+
+.splide__pagination__page.is-active {
+    background: var(--accent-400);
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+
+// -----------------------------------------------------------------------------
+// About us page
 // -----------------------------------------------------------------------------
 
 .aboutus {
@@ -240,7 +221,7 @@ h3 {
 
 
 // -----------------------------------------------------------------------------
-//
+// Services Page
 // -----------------------------------------------------------------------------
 
 .services .auto-grid {
@@ -311,7 +292,7 @@ h3 {
 
 
 // -----------------------------------------------------------------------------
-//
+// Misc.
 // -----------------------------------------------------------------------------
 
 .socials-list {
@@ -324,6 +305,12 @@ h3 {
         justify-content: center;
     }
 }
+
+
+.text--center {
+    text-align: center;
+}
+
 
 .bg-gradient-gold {
     background: linear-gradient(45deg, var(--accent-300), var(--accent-600));

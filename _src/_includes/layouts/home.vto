@@ -4,9 +4,11 @@ layout: layouts/base.vto
 
 <main class="[] [ content-grid ] []">
     <section class="[ hero ] [ full-width ] [ region ]">
-        <img class="hero__image [ full-width ]" src="{{ hero.image |> url }}">
+        <div class="hero__image full-width bg-gradient-gold">
+            <img class="full-width" src="{{ hero.image |> url }}" alt="{{hero.title}}">
+        </div>
         <div class="hero__content">
-            <h1 class="text--center">{{ hero.title }}</h1>
+            <h1 class="title text--center">{{ hero.title }}</h1>
         </div>
     </section>
     <section class="[ about-block ] [ content-grid ] [ region | flow ]">
@@ -28,7 +30,7 @@ layout: layouts/base.vto
         </div>
     </section>
     <section class="splide [ full-width ]" role="group" aria-label="gallery-carousel">
-        <div class="splide__track full-width">
+        <div class="splide__track [ full-width ]">
             <ul class="splide__list">
                 {{ for item of gallery.images }}
                 <li class="splide__slide">
