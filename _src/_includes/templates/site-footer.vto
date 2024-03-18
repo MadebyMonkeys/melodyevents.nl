@@ -4,7 +4,7 @@
             <div>&copy; Copyright 2024 Melody Events</div>
             <div class="flex-group ai-center">
                 {{ for social of socials.platform }}
-                     <a href="{{ social.url }}" alt="{{social.name}}">
+                     <a href="{{ social.url }}" aria-label="{{social.name}}">
                     {{ if social.icon }}
                         <i class="fa-brands fa-{{social.icon}} fs-600"></i>    
                     {{ else }}
@@ -24,6 +24,7 @@
     <script>
         var splide = new Splide( '.splide', {
             type     : 'loop',
+            perMove  : 1,
             focus    : 'center',
             perPage  : 3,
             autoWidth: true,

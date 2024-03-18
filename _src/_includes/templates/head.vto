@@ -11,5 +11,8 @@
     {{ /if }}
     <link rel="stylesheet" href="/css/fontawesome.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {{ if it.hasAdmin }}
+        <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {{ else }}
+    {{ /if }}
 </head>
