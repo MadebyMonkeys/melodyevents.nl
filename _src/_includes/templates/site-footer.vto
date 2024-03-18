@@ -18,4 +18,28 @@
 </footer>
 
 <!-- Scripts -->
+
+{{ if it.splide }}
+    <script src="/js/splide.min.js"></script>
+    <script>
+        var splide = new Splide( '.splide', {
+            type     : 'loop',
+            focus    : 'center',
+            perPage  : 3,
+            autoWidth: true,
+        } );
+
+        splide.mount();
+    </script>
+{{ else if it.venobox }}
+    <script type="text/javascript" src="/js/venobox.min.js"></script>
+    <script>
+        new VenoBox({
+            selector: '.gallery-image',
+            infinigall: true,
+        });
+    </script>
+{{ else }}
+{{ /if }}
+
 <script type="module" src="/js/main.js"></script>
