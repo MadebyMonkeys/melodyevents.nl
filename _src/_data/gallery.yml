@@ -1,15 +1,7 @@
 images:
-  - path: https://images.unsplash.com/photo-1524824267900-2fa9cbf7a506?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: Some image
-  - path: https://images.unsplash.com/photo-1620735692151-26a7e0748429?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: Some image
-  - path: https://images.unsplash.com/photo-1608713709464-04cfb951c93f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: Some image
-  - path: https://images.unsplash.com/photo-1620735692151-26a7e0748429?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: Some image
-  - path: https://images.unsplash.com/photo-1524824267900-2fa9cbf7a506?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: Some image
-  - path: https://images.unsplash.com/photo-1608713709464-04cfb951c93f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: Some image
-  - path: https://images.unsplash.com/photo-1524824267900-2fa9cbf7a506?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: Some image
+  - path: /img/ruimte/ruimte-foto-1.webp
+    alt: Ruimte foto 1
+  - path: /img/ruimte/ruimte-foto-2.webp
+    alt: Ruimte Foto 2
+  - path: /img/ruimte/ruimte-foto-3.webp
+    alt: Ruimte foto 3
