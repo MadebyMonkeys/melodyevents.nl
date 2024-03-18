@@ -1,6 +1,6 @@
 <header class="site-header">
     <div class="[ site-header__inner ] [ wrapper ]">
-        <a class="logo" href="/">
+        <a class="logo" href="/" alt="Return to homepage">
         {{ if site.logo }}
             <img src="{{ site.logo }}" inline />
         {{ else }}
@@ -17,7 +17,7 @@
             </ul>
         </nav>
         <label for="toggle" id="hamburgerMenu" class="hamburger-menu">
-            <input id="toggle" type="checkbox">
+            <input name="toggle" type="checkbox">
         </label>
     </div>
 </header>
