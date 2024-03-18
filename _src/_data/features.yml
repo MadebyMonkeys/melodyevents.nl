@@ -3,10 +3,10 @@ link: "/services/"
 list:
   - title: Huwelijken
     content: Creëer onvergetelijke herinneringen in een charmante omgeving perfect voor uw speciale dag.
-    image: /img/feature-huwelijken.webp
+    image: /img/features/feature-huwelijken.webp
   - title: Zakelijke evenementen
     content: Bent u op zoek naar een plek voor een congres, seminarie, beurs of bedrijfsfeest?
-    image: /img/feature-zakelijk.webp
+    image: /img/features/feature-zakelijk.webp
   - title: Overige evenementen
     content: Heeft u een andere idee voor een feest/evenement, neem dan contact met ons op.
-    image: /img/feature-overige.webp
+    image: /img/features/feature-overige.webp

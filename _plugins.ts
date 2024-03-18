@@ -6,6 +6,7 @@ import sass from "lume/plugins/sass.ts";
 import svgo from "lume/plugins/svgo.ts";
 import inline from "lume/plugins/inline.ts";
 import postcss from "lume/plugins/postcss.ts";
+import transformImages from "lume/plugins/transform_images.ts";
 
 export default function () {
     return (site: Site) => {
@@ -17,6 +18,7 @@ export default function () {
             .use(svgo())
             .use(inline())
             .use(postcss())
+            .use(transformImages())
             
             .copy("js")
             .copy("static", ".");
