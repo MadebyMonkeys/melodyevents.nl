@@ -32,7 +32,7 @@ $box-shadow-large: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0,
 // -----------------------------------------------------------------------------
 
 $body-foreground: var(--neutral-400);
-$body-background: white;
+$body-background: var(--neutral-50);
 
 $body-font-family: var(--ff-base);
 $body-font-size: var(--fs-400);
@@ -45,7 +45,7 @@ $body-line-height: 1.5;
 // Headings
 // -----------------------------------------------------------------------------
 
-$heading-foreground: var(--accent-500);
+$heading-foreground: var(--accent-600);
 
 $heading-font-family: var(--ff-accent);
 $heading-font-size: inherit;
