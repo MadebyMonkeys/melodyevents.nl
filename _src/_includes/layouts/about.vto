@@ -9,7 +9,7 @@ sort_by: order
             <h1>{{ about.title }}</h1>
             {{ about.body  |> md }}
         </div>
-        <img src="{{ image }}" alt="{{about.title}}">
+        <img src="{{ about.image }}" alt="{{about.title}}">
     </section>
     {{ include "partials/features.vto" }}
 </main>

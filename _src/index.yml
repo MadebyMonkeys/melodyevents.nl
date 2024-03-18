@@ -1,13 +1,14 @@
 layout: layouts/home.vto
-title: Homepage
-description: frontpage description
+title: Homepage new
+description: Bij Melody Events geloven we in de kracht van momenten. Of het nu gaat om een betoverende bruiloft of een zakelijk evenement van wereldklasse, wij zijn er om uw visie tot leven te brengen met ons ongeëvenaarde vakmanschap en oog voor detail.
 menu:
   visible: true
   title: Home
   order: 1
 
 metas:
-  decription: Bij Melody Events geloven we in de kracht van momenten. Of het nu gaat om een betoverende bruiloft of een zakelijk evenement van wereldklasse, wij zijn er om uw visie tot leven te brengen met ons ongeëvenaarde vakmanschap en oog voor detail.
+  title: =title
+  decription: =description
 
 hero:
   title: Wij verzorgen evenementen die onvergetelijk zijn.

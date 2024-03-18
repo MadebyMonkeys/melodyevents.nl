@@ -34,7 +34,7 @@ layout: layouts/base.vto
             <ul class="splide__list">
                 {{ for item of gallery.images }}
                 <li class="splide__slide">
-                    <img src="{{ item.path }}" alt="{{ item.alt }}">
+                    <img loading="lazy" src="{{ item.path }}" alt="{{ item.alt }}">
                 </li>
                 {{ /for }}
             </ul>
