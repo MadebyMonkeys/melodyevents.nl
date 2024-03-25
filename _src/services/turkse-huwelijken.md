@@ -2,13 +2,13 @@
 order: 2
 title: Turkse Huwelijken
 date: 2024-03-02T07:59:48.276Z
+image: https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 summery: Een Turks bruiloftsfeest is een levendige en kleurrijke viering die
   doordrenkt is van traditie en symboliek.
-image: https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 Een Turks bruiloftsfeest is een levendige en kleurrijke viering die doordrenkt is van traditie en symboliek. Het begint vaak met een verloving, waarbij families samenkomen om de verloving van het paar te vieren. Dit wordt gevolgd door verschillende ceremonies en festiviteiten, die meestal over meerdere dagen worden uitgespreid.
 
-Een van de belangrijkste aspecten van een Turks bruiloftsfeest is het uitgebreide diner, waarbij heerlijke gerechten worden geserveerd, zoals kebabs, pilav (pilaf), mezze (voorgerechten) en zoetigheden zoals baklava. Gastvrijheid staat centraal, en gasten worden overladen met eten en drankjes.
+Een van de belangrijkste aspecten van een Turks bruiloftsfeest is het uitgebreide diner, waarbij heerlijke gerechten worden geserveerd, zoals kebabs, pilav, mezze (voorgerechten) en zoetigheden zoals baklava. Gastvrijheid staat centraal, en gasten worden overladen met eten en drankjes.
 
 Een ander hoogtepunt van de bruiloft is de traditionele dans, waarbij zowel het bruidspaar als de gasten deelnemen. De bekendste dans is de halay, waarbij mensen in een cirkel dansen en ritmisch klappen. Muziek speelt een cruciale rol tijdens het feest, met traditionele Turkse muziek en moderne hits die de dansvloer vullen.
 
