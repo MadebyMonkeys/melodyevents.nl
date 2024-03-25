@@ -1,31 +1,61 @@
 layout: layouts/home.vto
 title: Homepage new
-description: Bij Melody Events geloven we in de kracht van momenten. Of het nu gaat om een betoverende bruiloft of een zakelijk evenement van wereldklasse, wij zijn er om uw visie tot leven te brengen met ons ongeëvenaarde vakmanschap en oog voor detail.
+description: Bij Melody Events geloven we in de kracht van momenten. Of het nu
+  gaat om een betoverende bruiloft of een zakelijk evenement van wereldklasse,
+  wij zijn er om uw visie tot leven te brengen met ons ongeëvenaarde vakmanschap
+  en oog voor detail.
 menu:
   visible: true
   title: Home
   order: 1
-
 metas:
   title: =title
   decription: =description
-
 hero:
-  title: Wij verzorgen evenementen die onvergetelijk zijn.
+  title: Uw visie, onze taak.
   image: /img/hero-image.webp
 about:
   title: Wie zijn wij?
-  body: |
-    Bij Melody Events geloven we in de kracht van momenten. Of het nu gaat om een betoverende bruiloft of een zakelijk evenement van wereldklasse, wij zijn er om uw visie tot leven te brengen met ons ongeëvenaarde vakmanschap en oog voor detail.
+  body: >
+    Bij Melody Events geloven we in de kracht van momenten. Of het nu gaat om
+    een betoverende bruiloft of een zakelijk evenement van wereldklasse, wij
+    zijn er om uw visie tot leven te brengen met ons ongeëvenaarde vakmanschap
+    en oog voor detail.
+
 
     Ons toegewijde team van ervaren professionals staat klaar om uw evenement tot in de kleinste details te plannen en uit te voeren, zodat u kunt genieten van elk moment zonder zorgen. Met een passie voor perfectie streven we ernaar om elk evenement uniek en memorabel te maken, waarbij we uw wensen en dromen tot de kern van ons werk maken.
 whyus:
   title: Waarom kiezen voor Melody events
-  content: Bij Melody Events streven we ernaar om uw evenement tot een onvergetelijke ervaring te maken, waarbij we niet alleen aandacht besteden aan elk detail, maar ook aan het bieden van gemak en uitmuntendheid aan onze gewaardeerde klanten. Kies voor Melody Events en laat ons u helpen om uw dromen werkelijkheid te maken, zonder gedoe en met alle luxe die u verdient.
+  content: Bij Melody Events streven we ernaar om uw evenement tot een
+    onvergetelijke ervaring te maken, waarbij we niet alleen aandacht besteden
+    aan elk detail, maar ook aan het bieden van gemak en uitmuntendheid aan onze
+    gewaardeerde klanten. Kies voor Melody Events en laat ons u helpen om uw
+    dromen werkelijkheid te maken, zonder gedoe en met alle luxe die u verdient.
   panels:
-    - title: Aangekleden ruimte
-      text: Bij Melody Events zorgen we voor een prachtig aangeklede ruimte die perfect past bij uw evenement. Of het nu gaat om een romantische bruiloft of een zakelijke bijeenkomst, onze toegewijde teamleden zorgen voor een verfijnde en uitnodigende sfeer die de essentie van uw gelegenheid weerspiegelt. Van elegant meubilair tot smaakvolle decoraties, wij zorgen ervoor dat elke hoek van de ruimte tot in de puntjes is verzorgd, zodat u en uw gasten zich volledig kunnen onderdompelen in de magie van het moment.
+    - title: Aangeklede ruimte
+      text: Bij Melody Events zorgen we voor een prachtig aangeklede ruimte die
+        perfect past bij uw evenement. Of het nu gaat om een romantische
+        bruiloft of een zakelijke bijeenkomst, onze toegewijde teamleden zorgen
+        voor een verfijnde en uitnodigende sfeer die de essentie van uw
+        gelegenheid weerspiegelt. Van elegant meubilair tot smaakvolle
+        decoraties, wij zorgen ervoor dat elke hoek van de ruimte tot in de
+        puntjes is verzorgd, zodat u en uw gasten zich volledig kunnen
+        onderdompelen in de magie van het moment.
     - title: Catering in huis
-      text: Bij Melody Events laten we u genieten van de heerlijke smaken van de Turkse keuken met onze eenvoudige maar smaakvolle gerechten. Van verfrissende salades tot hartige stoofschotels en versgebakken brood, onze Turkse cateringopties brengen de authentieke smaken van Turkije naar uw evenement. Geniet van de warme gastvrijheid en de rijke culinaire tradities van Turkije, terwijl u samen met uw gasten geniet van de verrukkelijke smaken die onze eenvoudige gerechten bieden.
-    - title: Gratis parkeer ruimte
-      text: Bij Melody Events geloven we in het bieden van gemak aan onze klanten vanaf het moment dat ze arriveren. Daarom bieden wij gratis parkeergelegenheid aan al onze gasten. Geen gedoe met zoeken naar een parkeerplaats of extra kosten. U kunt gewoon genieten van uw evenement, wetende dat parkeren voor u geregeld is.
+      text: Bij Melody Events laten we u genieten van de heerlijke smaken van de
+        Turkse keuken met onze eenvoudige maar smaakvolle gerechten. Van
+        verfrissende salades tot heerlijke (bulgur) rijst met kip en
+        versgebakken brood, onze Turkse cateringopties brengen de authentieke
+        smaken van Turkije naar uw evenement. Geniet van de warme gastvrijheid
+        en de rijke culinaire tradities van Turkije, terwijl u samen met uw
+        gasten geniet van de verrukkelijke smaken die onze eenvoudige gerechten
+        bieden.
+    - title: Gratis parkeergelegenheid
+      text: Bij Melody Events geloven we in het bieden van gemak aan onze klanten
+        vanaf het moment dat ze arriveren. Daarom bieden wij gratis
+        parkeergelegenheden aan al onze gasten, wij beschikken over een ruime
+        parkeerplaats direct naast het terrein, daarnaast is er overal rondom
+        het terrein ruimte om te parkeren; ook kunt u langs de Zevenheuvelenweg
+        gratis parkeren. Geen gedoe met zoeken naar een parkeerplaats of extra
+        kosten. U kunt gewoon genieten van uw evenement, wetende dat parkeren
+        voor u geregeld is.
