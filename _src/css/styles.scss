@@ -127,15 +127,13 @@ h3 {
     --border: none;
 
     .card__image img {
-        opacity: .75;
-        transition: opacity 500ms ease-in-out, scale 500ms ease;
+        transition: scale 500ms ease;
     }
 
     &.card:is(:hover) {
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
         .card__image img {
-            opacity: 1;
             scale: 1.1;
         }
     }
@@ -238,8 +236,7 @@ h3 {
     transition: box-shadow 500ms ease;
 
     .card__image img {
-        opacity: .5;
-        transition: opacity 500ms ease-in-out, scale 500ms ease;
+        transition: scale 500ms ease;
     }
 
     &:is(:hover) {
@@ -247,7 +244,6 @@ h3 {
         box-shadow: #{$box-shadow-medium};
 
         .card__image img {
-            opacity: 1;
             scale: 1.1;
         }
 
