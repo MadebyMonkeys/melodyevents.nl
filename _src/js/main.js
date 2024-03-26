@@ -1,55 +1,47 @@
-//
-//
-//
-
 const menu = document.querySelector(".site-nav");
 const toggle = document.getElementById("hamburgerMenu");
 
-function toggleMenu() {
+const toggleMenu = () => {
   menu.classList.toggle("open");
   toggle.classList.toggle("open");
-}
+};
 
 toggle.addEventListener("click", toggleMenu);
 
-
-//
-//
-//
-
-var acc = document.querySelectorAll(".accordion");
-var active = null;
+const accordions = document.querySelectorAll(".accordion");
+let activePanel = null;
 
 // Set the first accordion as active by default
-if (acc.length > 0) {
-  acc[0].classList.add("active");
-  active = acc[0].nextElementSibling;
-  active.style.maxHeight = active.scrollHeight + "px";
+if (accordions.length > 0) {
+  const firstAccordion = accordions[0];
+  firstAccordion.classList.add("active");
+  activePanel = firstAccordion.nextElementSibling;
+  activePanel.style.maxHeight = activePanel.scrollHeight + "px";
 }
 
-acc.forEach((item, i) => {
-  item.addEventListener("click", function () {
+accordions.forEach(accordion => {
+  accordion.addEventListener("click", function() {
     // Remove active class from all accordions except the clicked one
-    acc.forEach((accordion) => {
-      if (accordion !== this) {
-        accordion.classList.remove("active");
-        accordion.nextElementSibling.style.maxHeight = null;
+    accordions.forEach(acc => {
+      if (acc !== this) {
+        acc.classList.remove("active");
+        acc.nextElementSibling.style.maxHeight = null;
       }
     });
 
     // Toggle active class for clicked accordion
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
+    const panel = this.nextElementSibling;
     
-    if (active && panel !== active) {
-      active.style.maxHeight = null;
+    if (activePanel && panel !== activePanel) {
+      activePanel.style.maxHeight = null;
     }
     
-    if (panel !== active) {
+    if (panel !== activePanel) {
       panel.style.maxHeight = panel.scrollHeight + "px";
-      active = panel;
+      activePanel = panel;
     } else {
-      active = null;
+      activePanel = null;
     }
   });
 });
