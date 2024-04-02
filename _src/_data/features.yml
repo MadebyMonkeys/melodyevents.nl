@@ -1,12 +1,15 @@
 title: Wat doen wij?
-link: "/services/"
+link: /services/
 list:
   - title: Huwelijken
-    content: Creëer onvergetelijke herinneringen in een charmante omgeving perfect voor uw speciale dag.
-    image: /img/features/feature-huwelijken.webp
+    content: Creëer onvergetelijke herinneringen in een charmante omgeving perfect
+      voor uw speciale dag.
+    image: /img/upload/young-wedding-couple-holding-hands_199808-217.avif
   - title: Zakelijke evenementen
-    content: Bent u op zoek naar een plek voor een congres, seminarie, beurs of bedrijfsfeest?
+    content: Bent u op zoek naar een plek voor een congres, seminarie, beurs of
+      bedrijfsfeest?
     image: /img/features/feature-zakelijk.webp
   - title: Overige evenementen
-    content: Heeft u een andere idee voor een feest/evenement, neem dan contact met ons op.
+    content: Heeft u een andere idee voor een feest/evenement, neem dan contact met
+      ons op.
     image: /img/features/feature-overige.webp
