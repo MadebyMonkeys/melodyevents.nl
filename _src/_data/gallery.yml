@@ -7,3 +7,17 @@ images:
     alt: Ruimte foto 3
   - alt: Ruimte foto 4
     path: /img/upload/zaal-schuin.jpeg
+  - alt: Buiten foto 1
+    path: /img/upload/menigte-l.jpeg
+  - alt: Buiten foto 2
+    path: /img/upload/menigte-k.jpeg
+  - alt: Buiten foto 3
+    path: /img/upload/menigte-d.jpeg
+  - path: /img/upload/melody-3.jpg
+    alt: Buiten foto 4
+  - alt: Buiten foto 5
+    path: /img/upload/ingang-voor-2.png
+  - alt: Buiten foto 6
+    path: /img/upload/ingang-hoek-2.png
+  - alt: Buiten foto 7
+    path: /img/upload/menigte-e.jpeg
