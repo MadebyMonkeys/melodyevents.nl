@@ -1,7 +1,9 @@
 images:
-  - path: /img/ruimte/ruimte-foto-1.webp
+  - path: /img/upload/melody-2.jpg
     alt: Ruimte foto 1
-  - path: /img/ruimte/ruimte-foto-2.webp
+  - path: /img/upload/zaal-midden-c.jpeg
     alt: Ruimte Foto 2
-  - path: /img/ruimte/ruimte-foto-3.webp
+  - path: /img/upload/zaal-podium.jpeg
     alt: Ruimte foto 3
+  - alt: Ruimte foto 4
+    path: /img/upload/zaal-schuin.jpeg
