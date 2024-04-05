@@ -2,7 +2,7 @@
 order: 2
 title: Turkse Huwelijken
 date: 2024-03-02T07:59:48.276Z
-image: /img/upload/_methode_times_prod_web_bin_1adfe5a2-e13d-11e9-8221-1b98fc56091e.jpg
+image: /img/upload/1adfe5a2-e13d-11e9-8221-1b98fc56091e.jpg
 summery: Een Turks bruiloftsfeest is een levendige en kleurrijke viering die
   doordrenkt is van traditie en symboliek.
 ---
