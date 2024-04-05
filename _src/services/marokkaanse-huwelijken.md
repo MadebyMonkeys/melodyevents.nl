@@ -2,11 +2,11 @@
 order: 3
 title: Marokkaanse Huwelijken
 date: 2024-03-03T07:59:34.153Z
+image: /img/upload/large_94529da0ccb6738a.jpg
 summery: Marokkaanse bruiloften behoren tot de meest levendige en spectaculaire
   bruiloften ter wereld. Doordrenkt van eeuwenoude tradities en rijke culturele
   erfgoed, brengen deze vieringen families, vrienden en gemeenschappen samen
   voor een onvergetelijke ervaring.
-image: https://images.unsplash.com/photo-1481653125770-b78c206c59d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 Marokkaanse bruiloften behoren tot de meest levendige en spectaculaire bruiloften ter wereld. Het is vaak een grootschalig evenement dat meerdere dagen kan duren en waarbij families, vrienden en gemeenschapsleden samenkomen om de verbintenis van het bruidspaar te vieren.
 
