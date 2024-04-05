@@ -1,7 +1,7 @@
 ---
 order: 5
-title: Afghaanse Huwelijk
-image: /img/upload/s-l1600-1-1-.jpg
+title: Afghaanse Huwelijken
+image: /img/upload/tpadhhqv_2x.jpg
 summery: Een Afghaanse bruiloft, ook wel bekend als 'Aroosi', is een belangrijke
   en uitbundige viering die diepgeworteld is in de Afghaanse cultuur en
   tradities.
