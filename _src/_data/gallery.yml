@@ -1,12 +1,16 @@
 images:
   - path: /img/upload/melody-2.jpg
     alt: Ruimte foto 1
+  - alt: Buiten foto 6
+    path: /img/upload/ingang-hoek-2.png
+  - alt: Ruimte foto 4
+    path: /img/upload/zaal-schuin.jpeg
+  - alt: Buiten foto 5
+    path: /img/upload/ingang-voor-2.png
   - path: /img/upload/zaal-midden-c.jpeg
     alt: Ruimte Foto 2
   - path: /img/upload/zaal-podium.jpeg
     alt: Ruimte foto 3
-  - alt: Ruimte foto 4
-    path: /img/upload/zaal-schuin.jpeg
   - alt: Ruimte foto 5
     path: /img/upload/zaal-dans.jpeg
   - alt: Ruimte foto 6
@@ -21,9 +25,7 @@ images:
     path: /img/upload/menigte-d.jpeg
   - path: /img/upload/melody-3.jpg
     alt: Buiten foto 4
-  - alt: Buiten foto 5
-    path: /img/upload/ingang-voor-2.png
-  - alt: Buiten foto 6
-    path: /img/upload/ingang-hoek-2.png
   - alt: Buiten foto 7
     path: /img/upload/menigte-e.jpeg
+  - alt: Buiten foto 8
+    path: /img/upload/burger-grill.jpeg
