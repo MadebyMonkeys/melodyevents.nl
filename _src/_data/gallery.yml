@@ -9,8 +9,12 @@ images:
     path: /img/upload/ingang-voor-2.png
   - path: /img/upload/zaal-midden-c.jpeg
     alt: Ruimte Foto 2
+  - path: /img/upload/melody-3.jpg
+    alt: Buiten foto 4
   - path: /img/upload/zaal-podium.jpeg
     alt: Ruimte foto 3
+  - alt: Buiten foto 2
+    path: /img/upload/menigte-k.jpeg
   - alt: Ruimte foto 5
     path: /img/upload/zaal-dans.jpeg
   - alt: Ruimte foto 6
@@ -19,12 +23,8 @@ images:
     path: /img/upload/zaal-achter-d.jpeg
   - alt: Buiten foto 1
     path: /img/upload/menigte-l.jpeg
-  - alt: Buiten foto 2
-    path: /img/upload/menigte-k.jpeg
   - alt: Buiten foto 3
     path: /img/upload/menigte-d.jpeg
-  - path: /img/upload/melody-3.jpg
-    alt: Buiten foto 4
   - alt: Buiten foto 7
     path: /img/upload/menigte-e.jpeg
   - alt: Buiten foto 8
