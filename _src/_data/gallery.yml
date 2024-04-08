@@ -7,6 +7,8 @@ images:
     alt: Ruimte foto 3
   - alt: Ruimte foto 4
     path: /img/upload/zaal-schuin.jpeg
+  - alt: Ruimte foto 5
+    path: /img/upload/zaal-dans.jpeg
   - alt: Buiten foto 1
     path: /img/upload/menigte-l.jpeg
   - alt: Buiten foto 2
