@@ -1,12 +1,12 @@
 ---
 order: 1
-title: Nederlandse huwelijken
+title: Nederlandse Huwelijken
 date: 2024-03-01T07:59:22.570Z
+image: https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 summery: Traditionele elementen spelen een belangrijke rol bij Nederlandse
   bruiloften. Het strooien van bloemblaadjes of rijst bij het verlaten van de
   ceremonie symboliseert vruchtbaarheid, geluk en voorspoed voor de toekomst van
   het bruidspaar.
-image: https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 Nederlandse bruiloften zijn een viering van liefde, samenzijn en verbondenheid. Ze combineren oude tradities met moderne elementen, waardoor ze uniek en betekenisvol zijn. Het plannen van een Nederlandse bruiloft begint vaak maanden, zo niet jaren van tevoren. Het bruidspaar en hun families zetten zich in om de perfecte locatie te vinden, een passende datum te kiezen en alle details van de bruiloft te regelen.
 
