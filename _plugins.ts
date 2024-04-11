@@ -12,7 +12,7 @@ export default function () {
     return (site: Site) => {
         site
             .use(decap_cms())
-            //.use(favicon())
+            .use(favicon())
             .use(metas())
             .use(sass())
             .use(svgo())
