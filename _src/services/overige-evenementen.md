@@ -1,6 +1,6 @@
 ---
 order: 6
-title: Overige evenementen
+title: Overige Evenementen
 image: /img/upload/friends-hanging-out-with-each-other.jpg
 summery: In de veelzijdige omgeving van onze feestzaal komen diverse
   bijeenkomsten tot leven. Van religieuze evenementen zoals Islamitische
