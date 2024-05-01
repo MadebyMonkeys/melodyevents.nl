@@ -38,7 +38,7 @@ layout: layouts/base.vto
                 <i class="fa-solid fa-location-dot"></i> <address>{{ site.address.street }} <br> {{ site.address.zipcode }} {{ site.address.city }}</address>
             </div>
             <div class="flex-group ai-center">
-                <i class="fa-solid fa-phone"></i> <span>06 123 456 78</span>
+                <i class="fa-solid fa-phone"></i> <span>{{ site.phone }}</span>
             </div>
             <div class="flex-group ai-center">
                 {{ for social of socials.platform }}
