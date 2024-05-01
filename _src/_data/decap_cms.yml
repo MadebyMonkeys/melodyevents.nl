@@ -29,6 +29,7 @@ collections:
           - { name: "name", label: "Name", widget: "string" }
           - { name: "logo", label: "Logo", widget: "image", default: "/img/logo.svg" }
           - { name: "email", label: "Email", widget: "string" }
+          - { name: "phone", label: "Phone", widget: "string" }
           - name: "address"
             label: "Address"
             widget: "object"
