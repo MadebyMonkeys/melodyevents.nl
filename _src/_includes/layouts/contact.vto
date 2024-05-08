@@ -6,7 +6,8 @@ layout: layouts/base.vto
     <section class="[ contact form ] [ content-grid ] [ region flow ]">
         <h1>{{ contact.title }}</h1>
         {{ contact.body |> md }}
-        <form class="flow" action="https://formsubmit.co/{{site.email}}" method="POST">
+        <!-- <form class="flow" action="https://formsubmit.co/{{site.email}}" method="POST"> -->
+        <form action="https://formsubmit.co/your-random-string" method="POST" />
             <input type="hidden" name="_subject" value="Contact formulier">
             <input type="hidden" name="_next" value="https://melodyevents.nl/thanks">
             <div class="formgroup">
