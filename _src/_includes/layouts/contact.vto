@@ -6,9 +6,8 @@ layout: layouts/base.vto
     <section class="[ contact form ] [ content-grid ] [ region flow ]">
         <h1>{{ contact.title }}</h1>
         {{ contact.body |> md }}
-        <form action="https://formsubmit.co/info@melodyevents.nl" method="POST" class="flow">
+        <form class="flow" action="https://formsubmit.co/{{site.email}}" method="POST">
             <input type="hidden" name="_subject" value="Contact formulier">
-            <input type="text" name="_honey" style="display:none">
             <input type="hidden" name="_next" value="https://melodyevents.nl/thanks">
             <div class="formgroup">
                 <label for="name">Naam</label>
@@ -29,7 +28,6 @@ layout: layouts/base.vto
             <input type="text" name="_honey" style="display:none">
             <button class="button" data-type="primary" type="submit">Verzend</button>
         </form>
-
     </section>
     <section class="[] [ full-width-split-screen ] [ ]">
         <div class="flow [ bg-neutral-100 ]">
