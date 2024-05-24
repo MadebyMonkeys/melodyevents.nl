@@ -6,9 +6,7 @@ layout: layouts/base.vto
     <section class="[ contact form ] [ content-grid ] [ region flow ]">
         <h1>{{ contact.title }}</h1>
         {{ contact.body |> md }}
-        <form class="flow" action="https://formsubmit.co/contact@melodyevents.nl" method="POST">
-            <input type="hidden" name="_subject" value="Contact formulier">
-            <input type="hidden" name="_next" value="https://melodyevents.nl/thanks">
+        <form class="flow" action="https://api.staticforms.xyz/submit" method="post">
             <div class="formgroup">
                 <label for="name">Naam</label>
                 <input id="name" type="text" name="name" required>
@@ -25,7 +23,11 @@ layout: layouts/base.vto
                 <label for="message">Bericht</label>
                 <textarea name="message" id="message" rows="4"></textarea>
             </div>
-            <input type="text" name="_honey" style="display:none">
+            <input type="text" name="honeypot" style="display:none">
+            <input type="hidden" name="accessKey" value="032f8bee-927a-4977-bb80-c5035e9c687c">
+            <input type="hidden" name="subject" value="Contact Formulier - melodyevents.nl" />
+            <input type="hidden" name="replyTo" value="@">
+            <input type="hidden" name="redirectTo" value="https://melodyevents.nl/thanks">
             <button class="button" data-type="primary" type="submit">Verzend</button>
         </form>
     </section>
