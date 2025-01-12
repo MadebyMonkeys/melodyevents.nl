@@ -6,9 +6,9 @@ layout: layouts/base.vto
     <section class="[ contact form ] [ content-grid ] [ region flow ]">
         <h1>{{ contact.title }}</h1>
         {{ contact.body |> md }}
-        <form class="flow" action="https://formsubmit.co/info@melodyevents.nl" method="post">
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_next" value="https://melodyevents.nl/thanks">
+        <form class="flow" action="https://api.web3forms.com/submit" method="post">
+            <input type="hidden" name="access_key" value="2759480a-a765-4b99-ae88-605eaefb4fe0">
+
             <div class="formgroup">
                 <label for="name">Naam</label>
                 <input id="name" type="text" name="name" required>
