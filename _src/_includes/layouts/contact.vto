@@ -8,7 +8,7 @@ layout: layouts/base.vto
         {{ contact.body |> md }}
         <form class="flow" action="https://api.web3forms.com/submit" method="post">
             <input type="hidden" name="access_key" value="2759480a-a765-4b99-ae88-605eaefb4fe0">
-
+            <input type="hidden" name="redirect" value="https://www.melodyevents.nl/thanks/">
             <div class="formgroup">
                 <label for="name">Naam</label>
                 <input id="name" type="text" name="name" required>
