@@ -17,6 +17,17 @@
     </div>
 </footer>
 
+{{ if reCapatcha }}
+<script src="https://www.google.com/recaptcha/api.js?render=6Lc1Uu4qAAAAAIW-pn9gz-Gskm1_J2OD3tYf6mCY"></script>
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6Lc1Uu4qAAAAAIW-pn9gz-Gskm1_J2OD3tYf6mCY', { action: 'submit' }).then(function(token) {
+            document.getElementById('g-recaptcha-response').value = token;
+        });
+    });
+</script>
+{{ /if }}
+
 <!-- Scripts -->
 {{ if it.splide }}
     <script src="/js/splide.min.js"></script>

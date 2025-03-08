@@ -6,24 +6,23 @@ layout: layouts/base.vto
     <section class="[ contact form ] [ content-grid ] [ region flow ]">
         <h1>{{ contact.title }}</h1>
         {{ contact.body |> md }}
-        <form class="flow" action="https://api.web3forms.com/submit" method="post">
-            <input type="hidden" name="subject" value="Website: Contact">
-            <input type="hidden" name="access_key" value="2759480a-a765-4b99-ae88-605eaefb4fe0">
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-            <input type="hidden" name="redirect" value="https://www.melodyevents.nl/thanks/">
-            <div class="formgroup">
+        <form class="flow" action="/send-mail.php" method="POST">
+            <input type="hidden" name="_form" value="contact">
+            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
+            <div class="field-group">
                 <label for="name">Naam</label>
                 <input id="name" type="text" name="name" required>
             </div>
-            <div class="formgroup">
+            <div class="field-group">
                 <label for="tel">Telefoonnummer</label>
                 <input id="tel" type="text" name="tel" required>
             </div>
-            <div class="formgroup">
+            <div class="field-group">
                 <label for="email">Email</label>
                 <input id="email" type="email" name="email" required>
             </div>
-            <div class="formgroup">
+            <div class="field-group">
                 <label for="message">Bericht</label>
                 <textarea name="message" id="message" rows="4"></textarea>
             </div>

@@ -8,11 +8,10 @@ layout: layouts/base.vto
             <h1>{{ offerte.title }}</h1>
             {{ offerte.body |> md }}
         </div>
-        <form class="flow" action="https://api.web3forms.com/submit" method="post">
-            <input type="hidden" name="access_key" value="2759480a-a765-4b99-ae88-605eaefb4fe0">
-            <input type="hidden" name="subject" value="Website: Offerte aanvraag">
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-            <input type="hidden" name="redirect" value="https://www.melodyevents.nl/thanks/">
+        <form class="flow" action="/send-mail.php" method="post">
+            <input type="hidden" name="_form" value="offerte">
+            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
             <div class="formgroup">
                 <label for="naam">Naam</label>
                 <input id="naam" type="text" name="naam" required>

@@ -1,5 +1,7 @@
 layout: layouts/contact.vto
 
+reCapatcha: true
+
 title: Contact
 description: Get in touch
 

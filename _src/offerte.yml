@@ -1,6 +1,8 @@
 layout: layouts/offerte.vto
 title: offerte
 
+reCapatcha: true
+
 menu:
     visible: true
     title: Offerte
