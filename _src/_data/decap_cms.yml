@@ -272,7 +272,7 @@ collections:
               - { name: "description", label: "Description", widget: "string" }
 
           - name: "section_services"
-            label: "Galerij block"
+            label: "Services block"
             widget: "object"
             fields:
               - { name: "block_title", label: "Block title", widget: "string" }
@@ -312,7 +312,7 @@ collections:
               - { name: "description", label: "Description", widget: "string" }
 
           - name: "section_offerte"
-            label: "Galerij block"
+            label: "Offerte block"
             widget: "object"
             fields:
               - { name: "block_title", label: "Block title", widget: "string" }
