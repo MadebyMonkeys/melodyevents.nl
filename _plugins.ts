@@ -33,8 +33,8 @@ export default function () {
             .use(purgecss())
             .use(robots())
             .use(svgo())
-            .use(transform_images());
-            //.use(decap_cms());
+            .use(transform_images())
+            .use(decap_cms());
 
         /** 🔹 Bestanden kopiëren */
         site
