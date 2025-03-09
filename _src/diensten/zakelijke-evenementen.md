@@ -4,6 +4,7 @@ description: "Onze feestzaal biedt ruimte voor diverse evenementen, van religieu
 image: "/uploads/ibiza_wedding_elinenijburgphotography-193.jpg"
 date: 2025-03-02T00:51:51.356Z
 draft: false
+order: 6
 ---
 
 # Zakelijke Evenementen

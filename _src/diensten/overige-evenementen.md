@@ -2,8 +2,9 @@
 title: "Overige Evenementen"
 description: "Onze feestzaal biedt ruimte voor diverse evenementen, van religieuze bijeenkomsten en culturele vieringen tot bedrijfsbijeenkomsten, feesten en educatieve workshops, met een prachtig terras voor zomerse evenementen."
 image: "/uploads/ibiza_wedding_elinenijburgphotography-193.jpg"
-date: 2025-03-01T00:51:51.356Z
+date: 2025-02-01T00:51:51.356Z
 draft: false
+order: 7
 ---
 
 # Overige Evenementen

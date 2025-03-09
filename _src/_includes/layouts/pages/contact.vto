@@ -14,6 +14,8 @@ layout: layouts/page.vto
         <ul class="company-info flow" role="list">
             <li class="flex-group"><ion-icon name="pin"></ion-icon> {{ company.address.street }} <br> {{ company.address.zipcode }} {{ company.address.city }}</li>
             <li class="flex-group"><ion-icon name="call"></ion-icon> <a href="tel:{{ company.phone }}">{{ company.phone }}</a></li>
+            <li class="flex-group"><ion-icon name="call"></ion-icon> <a href="tel:{{ company.kvk_nummer }}">{{ company.kvk_nummer }}</a></li>
+            <li class="flex-group"><ion-icon name="call"></ion-icon> <a href="tel:{{ company.btw_nummer }}">{{ company.btw_nummer }}</a></li>
         </ul>
 
         <div class="socials flow">

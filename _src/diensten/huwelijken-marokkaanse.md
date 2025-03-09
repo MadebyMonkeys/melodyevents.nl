@@ -4,6 +4,7 @@ description: "Een Marokkaanse bruiloft is een grootschalige viering vol traditie
 image: "/uploads/marokkaanse-huwelijken-featured.jpg"
 date: 2025-02-26T00:51:51.356Z
 draft: false
+order: 3
 ---
 
 # Marokkaanse Huwelijken

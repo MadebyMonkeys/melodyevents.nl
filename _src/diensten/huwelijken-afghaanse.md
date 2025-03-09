@@ -4,6 +4,7 @@ description: "Een Afghaanse bruiloft is een uitbundige viering vol tradities, ri
 image: "/uploads/afghaanse-huwelijken-featured.jpg"
 date: 2025-02-28T00:51:51.356Z
 draft: false
+order: 5
 ---
 
 # Marokkaanse Huwelijken

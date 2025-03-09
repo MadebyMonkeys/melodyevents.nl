@@ -302,6 +302,7 @@ collections:
         fields:
           - { name: title, label: "Pagina title", widget: "string" }
           - { name: description, label: "Pagina beschrijving", widget: "string" }
+          - { name: order, label: "Volgorde nummer", widget: "string" }
 
           - name: "metas"
             label: "metas"
