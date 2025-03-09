@@ -2,9 +2,8 @@
 title: "Afghaanse Huwelijken"
 description: "Een Afghaanse bruiloft is een uitbundige viering vol tradities, rituelen, muziek, dans, gastvrijheid en cultuur, waarbij liefde en familie centraal staan."
 image: "/uploads/afghaanse-huwelijken-featured.jpg"
-date: 2025-02-28T00:51:51.356Z
-draft: false
 order: 5
+draft: false
 ---
 
 # Marokkaanse Huwelijken

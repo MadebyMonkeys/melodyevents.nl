@@ -183,7 +183,7 @@ collections:
               - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
               - { name: "body", label: "Body", widget: "string" }
-              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image", label: "Image", widget: "image", default: "/images/undraw_pure-love.svg" }
               - { name: "alt", label: "Image description", widget: "string" }
 
 
@@ -194,7 +194,7 @@ collections:
               - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
               - { name: "body", label: "Body", widget: "string" }
-              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image", label: "Image", widget: "image", default: "/images/undraw_partying.svg" }
               - { name: "alt", label: "Image description", widget: "string" }
 
           - name: "section_two"
@@ -204,7 +204,7 @@ collections:
               - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
               - { name: "body", label: "Body", widget: "string" }
-              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image", label: "Image", widget: "image", default: "/images/undraw_team.svg" }
               - { name: "alt", label: "Image description", widget: "string" }
 
 
@@ -215,7 +215,7 @@ collections:
               - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
               - { name: "body", label: "Body", widget: "string" }
-              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image", label: "Image", widget: "image", default: "/images/undraw_dreamer.svg" }
               - { name: "alt", label: "Image description", widget: "string" }
 
           - name: "section_four"
@@ -225,7 +225,7 @@ collections:
               - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
               - { name: "body", label: "Body", widget: "string" }
-              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image", label: "Image", widget: "image", default: "/images/undraw_effortless-love.svg" }
               - { name: "alt", label: "Image description", widget: "string" }
 
 
@@ -331,5 +331,5 @@ collections:
       - { name: "title", label: "Title", widget: "string" }
       - { name: "description", label: "Description", widget: "text" }
       - { name: "image", label: "Image", widget: "image" }
-      - { name: "date", label: "Date", widget: "datetime" }
       - { name: "body", label: "Body", widget: "text" }
+      - { name: "draft", label: "Published", widget: "boolean", default: true }

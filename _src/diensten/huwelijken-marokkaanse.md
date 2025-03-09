@@ -2,9 +2,8 @@
 title: "Marokkaanse Huwelijken"
 description: "Een Marokkaanse bruiloft is een grootschalige viering vol traditie, muziek, dans, hennarituelen, heerlijk eten en familiebanden, waarin liefde en gemeenschap centraal staan."
 image: "/uploads/marokkaanse-huwelijken-featured.jpg"
-date: 2025-02-26T00:51:51.356Z
-draft: false
 order: 3
+draft: false
 ---
 
 # Marokkaanse Huwelijken

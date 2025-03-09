@@ -2,9 +2,8 @@
 title: "Hindoestaanse Huwelijken"
 description: "Een Hindoestaanse bruiloft is een kleurrijke viering vol tradities, rituelen, muziek, dans, spirituele verbondenheid en familie, waarbij liefde en cultureel erfgoed centraal staan."
 image: "/uploads/hindoestaanse-huwelijken-featured.jpg"
-date: 2025-02-27T00:51:51.356Z
-draft: false
 order: 4
+draft: false
 ---
 
 # Hindoestaanse Huwelijken

@@ -2,9 +2,8 @@
 title: "Nederlandse Huwelijken"
 description: "Bij Nederlandse bruiloften staat traditie centraal, zoals het strooien van bloemblaadjes of rijst, wat symbool staat voor geluk, vruchtbaarheid en een voorspoedige toekomst."
 image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-date: 2025-02-24T00:51:51.356Z
-draft: false
 order: 1
+draft: false
 ---
 
 # Nederlandse Huwelijken
