@@ -1,8 +1,6 @@
-name: Melody Events
-logo: /img/upload/melody-events-logo.svg
-email: info@melodyevents.nl
-phone: +31 6 22186762
-address:
-  street: Gebroeders Deprezstraat 4
-  zipcode: 5048 AJ
-  city: Tilburg
+root: "https://melodyevents.nl"
+name: "Melodyevents"
+description: "Bij Melody Events bent u aan het juiste adress for all uw Trouwfeesten en andere evenementen."
+
+analytics:
+  umami_id: ""

@@ -1,0 +1,49 @@
+<form class="flow" action="/send-mail.php" method="post">
+    <input type="hidden" name="_form" value="offerte">
+    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
+    <div class="field-group">
+        <label for="naam">Naam</label>
+        <input id="naam" type="text" name="naam" required>
+    </div>
+    <div class="field-group">
+        <label for="tel">Telefoonnummer</label>
+        <input id="tel" type="text" name="telefoon nummer" required>
+    </div>
+    <div class="field-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required>
+    </div>
+
+    <div class="field-group">
+        <label for="cultuur">Culturele achtergrond</label> <br>
+        <select name="cultuur" id="cultuur">
+            <option value="">--Maak een keuze--</option>
+            <option value="Nederlands">Nederlands</option>
+            <option value="Turks">Turks</option>
+            <option value="Marokkaans">Marokkaans</option>
+            <option value="Afghaans">Afghaans</option>
+            <option value="Hindoestaans">Hindoestaans</option>
+            <option value="Overige">Overige</option>
+        </select>
+    </div>
+    <div class="field-group">
+        <label for="event">Type evenement</label>
+        <input id="event" placeholder="bruiloft, hennafeest, babyshower etc." type="text" name="type evenement" required>
+    </div>
+    <div class="field-group">
+        <label for="aantal">Maximaal aantal verwachten gasten</label> <br>
+        <input id="aantal" placeholder="300" type="text" name="aantal gasten" required>
+    </div>
+    <div class="field-group">
+        <label for="datum">Gewenste datum</label> <br>
+        <input id="datum" placeholder="dd-mm-yyyy" type="date" name="datum" required>
+    </div>
+    <input type="hidden" name="_subject" value="Offerte aanvraag">
+    <div class="field-group">
+        <label for="extra">Toevoegende informatie</label>
+        <textarea name="extra informatie" id="extra" cols="30" rows="10"></textarea>
+    </div>
+
+    <button class="button" data-button-variant="accent" type="submit">Verzend</button>
+</form>

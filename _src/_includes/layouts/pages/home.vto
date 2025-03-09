@@ -1,0 +1,74 @@
+---
+layout: layouts/page.vto
+---
+
+<section class="[ hero ] [ full stack ] [ ]">
+    <img class="hero__image" src="{{ section_hero.image }}" alt="{{ section_hero.alt }}">
+    <div class="hero__overlay"></div>
+    <div class="hero__inner wrapper region">
+        <div class="block">
+            <span class="block__title">{{ section_hero.block_title }}</span>
+            <h1 class="block__subtitle">{{ section_hero.title }}</h1>
+        </div>
+    </div>
+</section>
+<section class="[ services ] [ full-width ] [ region ]">
+    <div class="block">
+        <span class="block__title">{{ section_services.block_title }}</span>
+        <h2 class="block__subtitle">{{ section_services.title }}</h2>
+    </div>
+    <ul class="grid" data-cols="thirds" role="list">
+    {{ for service of section_services.list }}
+        <li class="card flow">
+            <img class="service__icon" src="{{ service.icon }}" inline />
+            <h3 class="card__title">{{ service.name }}</h3>
+            {{ service.body |> md }}
+            <a href="{{ service.url }}" class="button" data-button-ghost>Meer informatie</a>
+        </li>
+    {{ /for }}
+    </ul>
+</section>
+<section class="[ about ] [ full full-width-split-screen ] [ ]">
+    <img src="{{ section_about.image }}" alt="{{ section_about.alt }}">
+    <div class="content__item flow region bg-neutral-50">
+        <div class="block">
+            <span class="block__title">{{ section_about.block_title }}</span>
+            <h2 class="block__subtitle">{{ section_about.title }}</h2>
+        </div>
+        {{ section_about.body |> md }}
+        <a href="/over-ons" class="button" data-button-variant="accent">Lees verder</a>
+    </div>
+</section>
+
+<section class="[ gallery ] [ full-width ] [ flow region ]">
+    <div class="block">
+        <span class="block__title">{{ section_gallery.block_title }}</span>
+        <h2 class="block__subtitle">{{ section_gallery.title }}</h2>
+    </div>
+    <ul class="gallery__list grid" data-cols="thirds" data-rows="masonary" role="list">
+        {{ for image of section_gallery.images |> slice(0,6) }}
+            <li class="gallery__item">
+                <a href="{{ image.path }}" data-fslightbox="zaal">
+                    <img class="gallery__image" src="{{ image.path }}" alt="{{ image.alt }}">
+                </a>
+            </li>
+        {{ /for }}
+    </ul>
+</section>
+
+<section class="[ cta ] [ full full-width-split-screen ] [ color-primary-900 ]">
+    <div class="content__item flow region bg-primary-50">
+        <div class="block">
+            <h3 class="block__subtitle">{{ section_cta.block_one_title }}</h3>
+        </div>
+        {{ section_cta.block_one_body |> md }}
+        <a href="{{ section_cta.button_one.url }}" class="button" data-button-ghost>{{ section_cta.button_one.title }}</a>
+    </div>
+    <div class="content__item flow region bg-primary-100">
+        <div class="block">
+            <h3 class="block__subtitle">{{ section_cta.block_two_title }}</h3>
+        </div>
+        {{ section_cta.block_two_body |> md }}
+        <a href="{{ section_cta.button_two.url }}" class="button" data-button-ghost>{{ section_cta.button_two.title }}</a>
+    </div>
+</section>

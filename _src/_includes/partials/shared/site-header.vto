@@ -1,0 +1,20 @@
+<header class="site-header">
+    <div class="site-header__inner">
+        <a href="/" class="brand">
+            {{ if company.logo }}
+                <img class="brand__image" src="{{ company.logo}}" inline />
+            {{ else }}
+                <span class="brand__name">{{ company.name }}</span>
+            {{ /if }}
+        </a>
+        <button class="hamburger">
+            <span class="visually-hidden">menu</span>
+            <svg class="hamburger__icon" width="32" height="24" viewBox="0 0 32 24">
+                <line x1="2" y1="2" x2="30" y2="2" />
+                <line x1="2" y1="12" x2="30" y2="12" />
+                <line x1="2" y1="22" x2="30" y2="22" />
+            </svg>
+        </button>
+        {{ include "partials/shared/site-nav.vto" }}
+    </div>
+</header>

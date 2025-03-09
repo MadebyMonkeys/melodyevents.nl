@@ -1,0 +1,84 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// CORE STYLES (Structuur en opbouw van .site-nav)
+// -----------------------------------------------------------------------------
+
+.site-nav {
+    order: 3;
+    width: 100%;
+    display: none;
+
+    &__list {
+        --list-display: flex;
+        --list-gap: var(--site-nav-list-gap, #{$site-nav-list-gap});
+
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__item {}
+
+    &__link {
+        text-decoration: none;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+}
+
+.site-header:has([aria-expanded="true"]) nav {
+    display: block;
+}
+
+
+// -----------------------------------------------------------------------------
+// Breakpoint
+// -----------------------------------------------------------------------------
+
+.site-nav {
+    @include mq(md) {
+        display: flex;
+    
+        &,
+        &__item {
+            width: auto;
+        }
+    }
+}
+
+// -----------------------------------------------------------------------------
+// THEME STYLES (Kleuren, achtergrond, padding, etc.)
+// -----------------------------------------------------------------------------
+
+.site-nav {
+    &__link {
+        --_link-foreground: var(--link-foreground, #{$site-nav-link-foreground});
+        --_link-foreground-hover: var(--link-foreground-hover, #{$site-nav-link-foreground-hover});
+        --_link-foreground-active: var(--link-foreground-active, #{$site-nav-link-foreground-active});
+        --_link-background: var(--link-background, #{$site-nav-link-background});
+        --_link-background-hover: var(--link-background-hover, #{$site-nav-link-background-hover});
+        --_link-background-active: var(--link-background-active, #{$site-nav-link-background-active});
+        --_link-padding: var(--link-padding, #{$site-nav-link-padding});
+        --_link-font-size: var(--link-font-size, #{$site-nav-link-font-size});
+        --_link-font-weight: var(--link-font-weight, #{$site-nav-link-font-weight});
+        --_link-border-radius: var(--link-border-radius, #{$site-nav-link-border-radius});
+
+        color: var(--_link-foreground);
+        background: var(--_link-background);
+        padding: var(--_link-padding);
+        font-size: var(--_link-font-size);
+        font-weight: var(--_link-font-weight);
+        border-radius: var(--_link-border-radius);
+
+        &:hover,
+        &:focus-visible {
+            --link-foreground: var(--_link-foreground-hover);
+            --link-background: var(--_link-background-hover);
+        }
+
+        &[aria-current="page"] {
+            --link-foreground: var(--_link-foreground-active);
+            --link-background: var(--_link-background-active);
+            --link-font-weight: var(--fw-medium);
+        }
+    }
+}

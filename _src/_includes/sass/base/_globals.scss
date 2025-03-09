@@ -1,0 +1,62 @@
+@use "../abstracts" as *;
+
+
+// -----------------------------------------------------------------------------
+// BODY
+// -----------------------------------------------------------------------------
+
+body {
+    --_body-foreground: var(--body-foreground, #{$body-foreground});
+    --_body-background: var(--body-background, #{$body-background});
+
+    --_body-font-family: var(--body-font-family, #{$body-font-family});
+    --_body-font-size: var(--body-font-size, #{$body-font-size});
+    --_body-font-weight: var(--body-font-weight, #{$body-font-weight});
+    --_body-line-height: var(--body-line-height, #{$body-line-height});
+
+    color: var(--_body-foreground);
+    background: var(--_body-background);
+
+    font-family: var(--_body-font-family);
+    font-size: var(--_body-font-size);
+    font-weight: var(--_body-font-weight);
+    line-height: var(--_body-line-height);
+}
+
+
+
+// -----------------------------------------------------------------------------
+// HEADING
+// -----------------------------------------------------------------------------
+
+h1, h2, h3, h4 {
+    color: var(--heading-foreground, #{$heading-foreground});
+    font-family: var(--heading-font-family, #{$heading-font-family});
+    font-size: var(--heading-font-size, #{$heading-font-size});
+    font-weight: var(--heading-font-weight, #{$heading-font-weight});
+    line-height: var(--heading-line-height, #{$heading-line-height});
+}
+
+
+
+// -----------------------------------------------------------------------------
+// ANCHOR
+// -----------------------------------------------------------------------------
+
+a:not([class]) {
+    --_link-foreground: var(--link-foreground, #{$link-foreground});
+    --_link-foreground-hover: var(--link-foreground-hover, #{$link-foreground-hover});
+    --_link-text-decoration: var(--link-text-decoration, #{$link-text-decoration});
+    --_link-text-decoration-hover: var(--link-text-decoration-hover, #{$link-text-decoration-hover});
+    --_link-transition: var(--link-transition, #{$link-transition});
+
+    color: var(--_link-foreground);
+    text-decoration: var(--_link-text-decoration);
+    transition: var(--_link-transition);
+
+    &:hover,
+    &:focus-visible {
+        --link-foreground: var(--_link-foreground-hover);
+        --link-text-decoration: var(--_link-text-decoration-hover);
+    }
+}
