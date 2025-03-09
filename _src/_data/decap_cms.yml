@@ -176,9 +176,9 @@ collections:
               - { name: "title", label: "Title", widget: "string" }
               - { name: "description", label: "Description", widget: "string" }
 
-          - name: section_hero
-            label: Hero Block
-            widget: object
+          - name: "section_hero"
+            label: "Hero Block"
+            widget: "object"
             fields:
               - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
@@ -187,9 +187,9 @@ collections:
               - { name: "alt", label: "Image description", widget: "string" }
 
 
-          - name: section_one
-            label: Location Block
-            widget: object
+          - name: "section_one"
+            label: "Location Block"
+            widget: "object"
             fields:
               - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
@@ -197,9 +197,9 @@ collections:
               - { name: "image", label: "Image", widget: "image" }
               - { name: "alt", label: "Image description", widget: "string" }
 
-          - name: section_two
-            label: Team Block
-            widget: object
+          - name: "section_two"
+            label: "Team Block"
+            widget: "object"
             fields:
               - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
@@ -208,9 +208,9 @@ collections:
               - { name: "alt", label: "Image description", widget: "string" }
 
 
-          - name: section_three
-            label: Werkwijzen Block
-            widget: object
+          - name: "section_three"
+            label: "Werkwijzen Block"
+            widget: "object"
             fields:
               - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
@@ -218,9 +218,9 @@ collections:
               - { name: "image", label: "Image", widget: "image" }
               - { name: "alt", label: "Image description", widget: "string" }
 
-          - name: section_four
-            label: Ervaringen Block
-            widget: object
+          - name: "section_four"
+            label: "Ervaringen Block"
+            widget: "object"
             fields:
               - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
@@ -271,9 +271,9 @@ collections:
               - { name: "title", label: "Title", widget: "string" }
               - { name: "description", label: "Description", widget: "string" }
 
-          - name: section_services
-            label: Galerij block
-            widget: object
+          - name: "section_services"
+            label: "Galerij block"
+            widget: "object"
             fields:
               - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
@@ -311,17 +311,17 @@ collections:
               - { name: "title", label: "Title", widget: "string" }
               - { name: "description", label: "Description", widget: "string" }
 
-          - name: section_offerte
-            label: Galerij block
-            widget: object
+          - name: "section_offerte"
+            label: "Galerij block"
+            widget: "object"
             fields:
               - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
 
-
-  - name: services
-    label: Diensten
+  - name: "services"
+    label: "Diensten"
     label_singular: "Dienst"
+    folder: "_src/diensten"
     create: true
     slug: "{{slug}}"
     identifier_field: "title"
