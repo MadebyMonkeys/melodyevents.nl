@@ -1,18 +1,13 @@
+# when using the default proxy server port
+# local_backend: true
+
 backend:
   name: git-gateway
-  repo: MadebyMonkeys/melody-events
   branch: main
-  commit_message:
-    create: Create {{colledtion}} “{{slug}}”
-    update: Update {{collection}} “{{slug}}”
-    delete: Delete {{collection}} “{{slug}}”
-    uploadMedia: Upload “{{path}}”
-    deleteMedia: Delete “{{path}}”
 
-# publish_mode: editorial_workflow
+media_folder: "_src/static/uploads"
+public_folder: "/uploads/"
 
-media_folder: "/_src/static/img/upload"
-public_folder: "/img/upload"
 
 collections:
   - name: "settings"
@@ -22,155 +17,318 @@ collections:
       preview: false
     files:
       - name: "general"
-        label: "Site Settings"
-        description: "General site settings"
-        file: "/_src/_data/site.yml"
+        label: "General Settings"
+        file: "_src/_data/site.yml"
         fields:
-          - { name: "name", label: "Name", widget: "string" }
-          - { name: "logo", label: "Logo", widget: "image", default: "/img/logo.svg" }
-          - { name: "email", label: "Email", widget: "string" }
-          - { name: "phone", label: "Phone", widget: "string" }
-          - name: "address"
-            label: "Address"
+          - { name: "name", label: "Naam", widget: "string" }
+
+          - name: "metas"
+            label: "metas"
             widget: "object"
             fields:
-              - { name: "street", label: "Street", widget: "string" }
-              - { name: "zipcode", label: "Zipcode", widget: "string" }
-              - { name: "city", label: "City", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "string" }
+              - { name: "icon", label: "Icon", widget: "image" }
+              - { name: "lang", label: "Language", widget: "string" }
+              - { name: "generator", label: "Generator", widget: "boolean" }
 
-      - name: "socials"
-        label: "Socials"
-        file: "/_src/_data/socials.yml"
-        fields:
-          - name: "platform"
-            label: "platform"
-            widget: list
+          - name: analytics
+            label: "Analytics"
+            widget: "object"
             fields:
-              - { name: "name", label: "Naam", widget: "string" }
+              - {
+                  name: "umami_id",
+                  label: "Umami analytics key",
+                  widget: "string",
+                }
+
+      - name: "company"
+        label: "Company Settings"
+        file: "_src/_data/company.yml"
+        fields:
+          - { name: "logo", label: "Logo", widget: "image" }
+          - { name: "name", label: "Naam", widget: "string" }
+          - { name: "phone", label: "Telefoon", widget: "string" }
+          - { name: "email", label: "Email", widget: "string" }
+          - { name: "kvk_nummer", label: "Kvk nummer", widget: "string" }
+          - { name: "btw_nummer", label: "BTW nummer", widget: "string" }
+              
+          - name: "address"
+            label: "Adress"
+            widget: "object"
+            fields:
+              - { name: "street", label: "Straat", widget: "string" }
+              - { name: "zipcode", label: "Postcode", widget: "string" }
+              - { name: "city", label: "Stad", widget: "string" }
+
+          - name: "socials"
+            label: "Socials"
+            widget: "list"
+            fields:
+              - { name: "name", label: "Platform", widget: "string" }
+              - { name: "icon", label: "Icon", widget: "string" }
               - { name: "url", label: "Url", widget: "string" }
-              - { name: "icon", label: "icon", widget: "string" }
-
-  - name: "components"
-    label: "Components"
-    # delete: false
-    editor:
-      preview: false
-    files:
-      - name: "features"
-        label: "features"
-        file: "/_src/_data/features.yml"
-        fields:
-          - name: "title"
-            label: "Title"
-            widget: string
-          - name: "link"
-            label: "Link"
-            widget: string
-          - name: "list"
-            label: "List"
-            widget: list
-            fields:
-              - { name: "title", label: "title", widget: "string" }
-              - { name: "content", label: "content", widget: "text" }
-              - { name: "image", label: "image", widget: "image" }
-
-
-      - name: "gallery"
-        label: "gallery"
-        create: true
-        file: "/_src/_data/gallery.yml"
-        public_folder: "/img/upload"
-        fields:
-          - name: "images"
-            label: "Images"
-            widget: list
-            fields:
-              - { name: "alt", label: "image description", widget: "string" }
-              - { name: "path", label: "image", widget: "image" }
-
+              - { name: "handle", label: "Handle", widget: "string" }
 
 
   - name: "pages"
-    label: "Pages"
+    label: "Paginas"
+    delete: false
     editor:
       preview: false
     files:
       - name: "home"
         label: "Home"
-        file: "/_src/index.yml"
+        file: "_src/index.md"
         fields:
-          - name: "hero"
-            label: "Hero"
+          - { name: title, label: "Pagina title", widget: "string" }
+          - { name: description, label: "Pagina beschrijving", widget: "string" }
+
+          - name: "metas"
+            label: "metas"
             widget: "object"
             fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "string" }
+
+          - name: section_hero
+            label: Hero Block
+            widget: object
+            fields:
+              - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
               - { name: "image", label: "Image", widget: "image" }
+              - { name: "alt", label: "Image description", widget: "string" }
 
-          - name: "about"
-            label: "About us"
-            fields:
-              - { name: "title", label: "Title", widget: "string" }
-              - { name: "body", label: "Body", widget: "markdown" }
 
-          - name: "whyus"
-            label: "Why us"
-            widget: "object"
+          - name: section_services
+            label: Diensten block
+            widget: object
             fields:
+              - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
-              - { name: "content", label: "Content", widget: "text" }
-              - name: "panels"
-                label: "panels"
-                description: "Punten waarom ze ons moeten kiezen."
-                widget: list
+              - name: "list"
+                label: "Hoofd diensten"
+                widget: "list"
                 fields:
-                  - { name: "title", label: "Title", widget: "string" }
-                  - { name: "text", label: "Text", widget: "text" }
+                  - { name: "name", label: "Name", widget: "string" }
+                  - { name: "icon", label: "Icon", widget: "image" }
+                  - { name: "body", label: "Body", widget: "text" }
+                  - { name: "url", label: "Url", widget: "string" }
+
+
+          - name: section_about
+            label: About Block
+            widget: object
+            fields:
+              - { name: "block_title", label: "Block title", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "alt", label: "Image description", widget: "string" }
+
+
+          - name: section_gallery
+            label: Galerij block
+            widget: object
+            fields:
+              - { name: "block_title", label: "Block title", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - name: "images"
+                label: "Gallery images"
+                widget: "list"
+                fields:
+                  - { name: "path", label: "Path", widget: "image" }
+                  - { name: "alt", label: "Alt", widget: "string" }
+
+          - name: section_cta
+            label: Galerij block
+            widget: object
+            fields:
+              - { name: "block_one_title", label: "Block 1 title", widget: "string" }
+              - { name: "block_one_body", label: "text", widget: "text" }
+              - name: "button_one"
+                label: "Button"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "title", widget: "string" }
+                  - { name: "url", label: "Url", widget: "string" }
+
+              - { name: "block_two_title", label: "Block 1 title", widget: "string" }
+              - { name: "block_two_body", label: "text", widget: "text" }
+              - name: "button_two"
+                label: "Button"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "title", widget: "string" }
+                  - { name: "url", label: "Url", widget: "string" }
 
       - name: "about"
         label: "About"
-        file: "/_src/about.yml"
+        file: "_src/over-ons.md"
         fields:
-          - name: "about"
-            label: "About"
+          - { name: title, label: "Pagina title", widget: "string" }
+          - { name: description, label: "Pagina beschrijving", widget: "string" }
+
+          - name: "metas"
+            label: "metas"
             widget: "object"
             fields:
               - { name: "title", label: "Title", widget: "string" }
-              - { name: "body", label: "Body", widget: "markdown" }
+              - { name: "description", label: "Description", widget: "string" }
+
+          - name: section_hero
+            label: Hero Block
+            widget: object
+            fields:
+              - { name: "block_title", label: "Block title", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "body", label: "Body", widget: "string" }
               - { name: "image", label: "Image", widget: "image" }
+              - { name: "alt", label: "Image description", widget: "string" }
+
+
+          - name: section_one
+            label: Location Block
+            widget: object
+            fields:
+              - { name: "block_title", label: "Block title", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "body", label: "Body", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "alt", label: "Image description", widget: "string" }
+
+          - name: section_two
+            label: Team Block
+            widget: object
+            fields:
+              - { name: "block_title", label: "Block title", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "body", label: "Body", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "alt", label: "Image description", widget: "string" }
+
+
+          - name: section_three
+            label: Werkwijzen Block
+            widget: object
+            fields:
+              - { name: "block_title", label: "Block title", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "body", label: "Body", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "alt", label: "Image description", widget: "string" }
+
+          - name: section_four
+            label: Ervaringen Block
+            widget: object
+            fields:
+              - { name: "block_title", label: "Block title", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "body", label: "Body", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "alt", label: "Image description", widget: "string" }
+
+
+      - name: "gallery"
+        label: "Gallery"
+        file: "_src/galerij.md"
+        fields:
+          - { name: title, label: "Pagina title", widget: "string" }
+          - { name: description, label: "Pagina beschrijving", widget: "string" }
+
+          - name: "metas"
+            label: "metas"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "string" }
+
+          - name: section_gallery
+            label: Galerij block
+            widget: object
+            fields:
+              - { name: "block_title", label: "Block title", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - name: "images"
+                label: "Gallery images"
+                widget: "list"
+                fields:
+                  - { name: "path", label: "Path", widget: "image" }
+                  - { name: "alt", label: "Alt", widget: "string" }
+
+
+      - name: "services"
+        label: "Services"
+        file: "_src/diensten.md"
+        fields:
+          - { name: title, label: "Pagina title", widget: "string" }
+          - { name: description, label: "Pagina beschrijving", widget: "string" }
+
+          - name: "metas"
+            label: "metas"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "string" }
+
+          - name: section_services
+            label: Galerij block
+            widget: object
+            fields:
+              - { name: "block_title", label: "Block title", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+
+
+      - name: "contact"
+        label: "Contact"
+        file: "_src/contact.md"
+        fields:
+          - { name: title, label: "Pagina title", widget: "string" }
+          - { name: description, label: "Pagina beschrijving", widget: "string" }
+
+          - name: "metas"
+            label: "metas"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "string" }
+
+          - { name: body, label: "content", widget: "text"}
 
 
       - name: "offerte"
         label: "Offerte"
-        file: "/_src/offerte.yml"
+        file: "_src/offerte.md"
         fields:
-          - name: "offerte"
-            label: "Offerte aanvragen"
+          - { name: title, label: "Pagina title", widget: "string" }
+          - { name: description, label: "Pagina beschrijving", widget: "string" }
+
+          - name: "metas"
+            label: "metas"
             widget: "object"
             fields:
-              - { name: "title", label: "Title", widget: "string"}
-              - { name: "body", label: "body", widget: "text" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "string" }
 
-      - name: "contact"
-        label: "Contact"
-        file: "/_src/contact.yml"
-        fields:
-          - name: "contact"
-            label: "Contact"
-            widget: "object"
+          - name: section_offerte
+            label: Galerij block
+            widget: object
             fields:
-              - { name: "title", label: "Title", widget: "string"}
-              - { name: "body", label: "body", widget: "text" }
+              - { name: "block_title", label: "Block title", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
 
 
-  - name: "services"
-    label: "Services"
-    folder: "/_src/services/"
+  - name: services
+    label: Diensten
+    label_singular: "Dienst"
     create: true
-    extension: "md"
     slug: "{{slug}}"
+    identifier_field: "title"
+    editor:
+      preview: false
     fields:
-      - { name: "order", label: "order", widget: "number" }
       - { name: "title", label: "Title", widget: "string" }
+      - { name: "description", label: "Description", widget: "text" }
       - { name: "image", label: "Image", widget: "image" }
-      - { name: "summery", label: "Summery", widget: "text" }
-      - { name: "body", label: "body", widget: "markdown" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "body", label: "Body", widget: "text" }

@@ -1,0 +1,22 @@
+<form class="flow" action="/send-mail.php" method="POST">
+    <input type="hidden" name="_form" value="contact">
+    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
+    <div class="field-group">
+        <label for="name">Naam</label>
+        <input id="name" type="text" name="name" required>
+    </div>
+    <div class="field-group">
+        <label for="tel">Telefoonnummer</label>
+        <input id="tel" type="text" name="tel" required>
+    </div>
+    <div class="field-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required>
+    </div>
+    <div class="field-group">
+        <label for="message">Bericht</label>
+        <textarea name="message" id="message" rows="4"></textarea>
+    </div>
+    <button class="button" data-button-variant="accent" type="submit">Verzend</button>
+</form>

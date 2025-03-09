@@ -1,9 +1,0 @@
-layout: layouts/services.vto
-
-title: Onze diensten
-description: Bekijk onze diensten in uitgebreiden detail
-
-menu:
-  visible: true
-  title: Diensten
-  order: 4

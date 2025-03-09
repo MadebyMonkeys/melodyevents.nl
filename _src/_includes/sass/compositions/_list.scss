@@ -1,0 +1,53 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// List(s)
+// -----------------------------------------------------------------------------
+
+.list {
+    --_list-display: var(--list-display, block);
+    --_list-gap: var(--list-gap, 1rem);
+    --_list-item-width: var(--list-item-width, auto);
+
+    display: var(--_list-display);
+    gap: var(--_list-gap);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &__item {
+        position: relative;
+        width: var(--_list-item-width);
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// EXCEPTIONS
+// -----------------------------------------------------------------------------
+
+.list {
+    &--inline {
+        --list-display: inline;
+    }
+
+    &--flex {
+        --_list-direction: var(--list-direction, auto);
+        
+        --list-display: flex;
+
+        flex-wrap: wrap;
+        align-items: center;
+
+
+        &-horizontal {
+            --list-direction: row;
+            --list-item-width:  auto;
+        }
+    
+        &-vertical {
+            --list-direction: column;
+            --list-item-width: 100%;
+        }
+    }
+}

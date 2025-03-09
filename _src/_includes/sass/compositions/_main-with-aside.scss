@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// Main with Aside
+// -----------------------------------------------------------------------------
+
+.main-with-aside {
+    --_content-max-width: var(--conten-max-width, 50ch);
+    --_sidebar-max-width: var(--sidebar-max-width, 410px);
+    --_main-with-aside-gap: var(--main-with-aside-gap, 5dvw);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: var(--_main-with-aside-gap);
+
+    & > main {
+        flex-basis: var(--_content-max-width);
+        flex-grow: 9999;
+    }
+
+    & > aside {
+        flex-basis: var(--_sidebar-max-width);
+        flex-grow: 1;
+    }
+}

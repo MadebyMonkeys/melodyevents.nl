@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// 
+// -----------------------------------------------------------------------------
+
+.wrapper {
+    --_wrapper-max-width: var(--wrapper-max-width, 1280px);
+    --_wrapper-padding-inline: var(--wrapper-padding-inline, 5dvw);
+
+    width: min(var(--_wrapper-max-width), (100% - (var(--_wrapper-padding-inline) * 2)));
+    //padding-inline: var(--_wrapper-padding-inline);
+    margin-inline: auto;
+}
+
+
+.wrapper_new {
+    max-inline-size: var(--_wrapper-max-width, 1280px);
+    padding-inline: var(--_wrapper-padding-inline, 5dvw);
+    margin-inline: auto;
+}

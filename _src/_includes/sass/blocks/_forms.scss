@@ -1,0 +1,31 @@
+input:not([type="submit"], [type="reset"], [type="button"], [type="search"]),
+select,
+textarea {
+    --_input-padding: var(--input-padding, var(--space-2xs));
+    --_input-border-color: var(--input-border-color, var(--neutral-400));
+    --_input-border-radius: var(--input-border-radius, .25rem);
+
+    appearance: none;
+    color: var(--neutral-600);
+    background: inherit;
+    padding: var(--_input-padding);
+    border: 1px solid var(--_input-border-color);
+    border-radius: var(--_input-border-radius);
+    width: 100%;
+
+    &:focus,
+    &:active {
+        --input-border-color: var(--primary-600);
+        outline: var(--input-border-color);
+    }
+}
+
+
+//
+//
+//
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+}

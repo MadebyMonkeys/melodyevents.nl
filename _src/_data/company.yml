@@ -1,0 +1,22 @@
+name: "Melody Events"
+logo: "/images/logo.svg"
+phone: "+31 6 221 867 62"
+email: "info@melodyevents.nl"
+btw_nummer: "NL123456789B01"
+kvk_nummer: "12345678"
+
+address:
+  street: Gebroeders Deprezstraat 4
+  zipcode: 5048 AJ
+  city: Tilburg
+
+
+socials:
+  - name: facebook
+    icon: logo-facebook
+    url: "https://www.facebook.com/people/Melody-Events/61557601445455/"
+    handle: "Melody-Events"
+  - name: instagram
+    icon: logo-instagram
+    url: "https://www.instagram.com/melodyevents.tilburg/"
+    handle: "@melodyevents.tilburg"

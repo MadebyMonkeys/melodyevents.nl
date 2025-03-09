@@ -1,0 +1,78 @@
+---
+layout: layouts/page.vto
+---
+
+<section class="[ about_two ] [ full-width ] [ region ]">
+    <div class="grid" data-cols="halfs" >
+        <div class="content__item flow">
+            <div class="block">
+                <span class="block__title">{{ section_hero.block_title }}</span>
+                <h2 class="block__subtitle">{{ section_hero.title }}</h2>
+            </div>
+            {{ section_hero.body |> md }}
+        </div>
+        <div>
+            <img src="{{ section_hero.image }}" alt="{{ section_hero.alt }}" >
+        </div>
+    </div>
+</section>
+
+<section class="[ about_one ] [ full-width ] [ region bg-neutral-50 ]">
+    <div class="grid is-reversed" data-cols="halfs" >
+        <div class="content__item flow">
+            <div class="block">
+                <span class="block__title">{{ section_one.block_title }}</span>
+                <h2 class="block__subtitle">{{ section_one.title }}</h2>
+            </div>
+            {{ section_one.body |> md }}
+        </div>
+        <div>
+            <img src="{{ section_one.image }}" alt="{{ section_one.alt }}">
+        </div>
+    </div>
+</section>
+
+<section class="[ about_two ] [ full-width ] [ region ]">
+    <div class="grid" data-cols="halfs" >
+        <div class="content__item flow">
+            <div class="block">
+                <span class="block__title">{{ section_two.block_title }}</span>
+                <h2 class="block__subtitle">{{ section_two.title }}</h2>
+            </div>
+            {{ section_two.body |> md }}
+        </div>
+        <div>
+            <img src="{{ section_two.image }}" alt="{{ section_two.alt }}" >
+        </div>
+    </div>
+</section>
+
+<section class="[ about_three ] [ full-width ] [ region bg-neutral-50 ]">
+    <div class="grid is-reversed" data-cols="halfs" >
+        <div class="content__item flow">
+            <div class="block">
+                <span class="block__title">{{ section_three.block_title }}</span>
+                <h2 class="block__subtitle">{{ section_three.title }}</h2>
+            </div>
+            {{ section_three.body |> md }}
+        </div>
+        <div>
+            <img src="{{ section_three.image }}" alt="{{ section_three.alt }}">
+        </div>
+    </div>
+</section>
+
+<section class="[ about_four ] [ full-width ] [ region ]">
+    <div class="grid" data-cols="halfs" >
+        <div class="content__item flow">
+            <div class="block">
+                <span class="block__title">{{ section_four.block_title }}</span>
+                <h2 class="block__subtitle">{{ section_four.title }}</h2>
+            </div>
+            {{ section_four.body |> md }}
+        </div>
+        <div>
+            <img src="{{ section_four.image }}" alt="{{ section_four.alt }}">
+        </div>
+    </div>
+</section>

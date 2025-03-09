@@ -1,264 +1,383 @@
-@use "scss/abstracts" as *;
+@use "sass/abstracts" as *;
 
-@use "scss/base";
-@use "scss/compositions";
-@use "scss/utilities";
-@use "scss/blocks";
-
-// -----------------------------------------------------------------------------
-//
-// -----------------------------------------------------------------------------
-
-p, li, blockquote {
-    max-width: 75ch;
-}
-
-strong, b {
-    font-weight: var(--fw-bold);
-}
-
-small {
-    font-size: var(--fs-300);
-}
+@forward "sass/base";
+@forward "sass/compositions";
+@forward "sass/utilities";
+@forward "sass/blocks";
 
 
 // -----------------------------------------------------------------------------
-// Heading(s)
+// Globals
 // -----------------------------------------------------------------------------
 
-h1, h2, h3, h4, h5, h6 {
-    letter-spacing: #{$heading-letter-spacing};
+h1, h2, h3 {
+    --heading-font-weight: var(--fw-regular);
 }
 
-h1 {
-    --font-size: var(--fs-900);
+h1, .h1 {
+    --heading-font-size: var(--fs-800);
 }
 
-h2 {
-    --font-size: var(--fs-800);
+h2, .h2 {
+    --heading-font-size: var(--fs-700);
 }
 
-h3 {
-    --font-size: var(--fs-700);
+h3, .h3 {
+    --heading-font-size: var(--fs-600);
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Utilities
+// -----------------------------------------------------------------------------
+
+.region {
+    padding-block: var(--region-space, 3.3vmax);
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Exceptions
+// -----------------------------------------------------------------------------
+
+.site-nav__item .button {
+    --button-font-size: #{$site-nav-link-font-size};
+}
+
+.main-with-aside > main {
+    & > :is(p, li, blockquote) {
+        max-width: 100%;
+    }
+}
+
+
+.widget {
+    padding: var(--space-m);
+
+    & > :is(p):first-child {
+        margin-block-start: 0;
+    }
+}
+
+
+.company-info {
+    margin-block-start: var(--space-s-l);
+
+    .flex-group {
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+// -----------------------------------------------------------------------------
+// Branding
+// -----------------------------------------------------------------------------
+
+.brand {
+    &__image {
+        height: 4ex;
+    }
+
+    &__name {
+        text-decoration: none;
+    }
 }
 
 
 // -----------------------------------------------------------------------------
-//
+// Hamburger
 // -----------------------------------------------------------------------------
 
-.site-header .logo svg {
-    width: 96px;
+.hamburger {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 999rem;
+    background: var(--primary-300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    .main {
-        fill: var(--accent-500);
+    @include mq(md) {
+        display: none;
+    }
+
+    &__icon {
+        width: 56px;
+        height: 36px;
+        display: block;
+        padding: 8px;
+
+        line {
+            transform-origin: center center;
+            stroke: var(--primary-900);
+            stroke-width: 4;
+            stroke-linecap: round;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+    }
+}
+
+.site-header:has([aria-expanded="true"]) .hamburger__icon {
+    margin-left: -10px;
+
+    & line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    & line:nth-child(2) {
+        opacity: 0;
+    }
+
+    & line:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// Block title
+// -----------------------------------------------------------------------------
+
+.block {
+    &__title {
+        color: var(--primary-600);
+        font-family: var(--ff-accent);
+        font-size: var(--fs-400);
+        font-weight: var(--fw-bold);
+        letter-spacing: 0.15ch;
+    }
+
+    &__subtitle {
+        --heading-foreground: var(--neutral-800);
+        font-family: var(--ff-serif);
+        margin-block-start: 0;
+    }
+
+    & + .grid {
+        margin-block-start: var(--space-s-l);
     }
 }
 
 
 
 // -----------------------------------------------------------------------------
-// HOME PAGE
+// Block title
 // -----------------------------------------------------------------------------
 
 .hero {
-    --region-space: 12.12vmax;
-
     position: relative;
-    overflow: hidden;
+    overflow: clip;
+    width: 100%;
 
     &__image {
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-
-        img {
-            opacity: .5;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        object-fit: cover;
+        object-position: center;
+        z-index: 0;
     }
 
-    &__content {
-        position: relative;
-    }
-}
-
-.hero__content .title {
-    --foreground: white;
-    text-shadow: 2px 2px 8px var(--accent-800);
-}
-
-
-
-//
-// About
-//
-.about-block.content-grid {
-    --_content-max-width: var(--wrapper-sm);
-}
-
-
-
-//
-// Features
-//
-.features {
-
-    background: var(--accent-500) url("../img/patroon.svg");
-    background-repeat: repeat;
-    background-size: auto;
-
-    & > .auto-grid {
-        --placement: auto-fit;
-        --min-col-size: clamp(20rem, 33%, 24rem);
-        --gap: var(--size-m);
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 1;
     }
 
-    .flex-group {
-        justify-content: space-between;
-    }
-}
-
-.feature {
-    --border: none;
-
-    .card__image img {
-        transition: scale 500ms ease;
-    }
-
-    &.card:is(:hover) {
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-
-        .card__image img {
-            scale: 1.1;
-        }
+    &__inner {
+        --region-space: 12.12vmax;
+        text-align: center;
+        z-index: 2;
     }
 }
 
 
+.hero {
+    .block__subtitle {
+        --heading-foreground: white;
+        --heading-font-size: var(--fs-800);
+        --heading-font-weight: var(--fw-regular);
+        --heading-line-height: 1.2;
 
-//
-// Why us
-//
-.whyus {
-    .auto-grid {
-        --placement: auto-fit;
-        --min-col-size: clamp(16rem, 50dvw, 26rem);
-        --gap: var(--size-xl);
+        max-width: 35ch;
     }
-}
-
-
-
-//
-// Carousel
-//
-.splide__list > li {
-    max-width: auto;
-}
-
-.splide__pagination__page.is-active {
-    background: var(--accent-400);
-}
-
-.splide__slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    aspect-ratio: 16/9;
 }
 
 
 // -----------------------------------------------------------------------------
-// About us page
+//
 // -----------------------------------------------------------------------------
 
-.aboutus {
-
-    &.full-width-split-screen > .aboutus__content {
-        align-content: start;
-        @include mq(md) {
-            padding-right: var(--size-2xl);
-            padding-left: 0;
-        }
-    }
-}
-
-
-
-// -----------------------------------------------------------------------------
-// Gallerij
-// -----------------------------------------------------------------------------
-
-.gallery-list {
-    .auto-grid {
-        --placement: auto-fill;
-        --min-col-size: clamp(16rem, 33%, 23rem);
-        --gap: var(--size-l);
-    }
-
-    .gallery-image {
-        position: relative;
+.services {
+    --grid-gap: var(--space-s-l);
+    .card {
         overflow: clip;
+        display: grid;
+        border: 1px solid var(--neutral-50);
+        max-width: unset;
+        transition: box-shadow 300ms ease-in-out;
 
-        img {
-            transition: 500ms;   
+        &__title {
+            --heading-foreground: var(--neutral-800);
+            --heading-font-family: var(--ff-sans);
+            --heading-font-size: var(--fs-400);
+            --heading-font-weight: var(--fw-bold);
+            max-width: unset;
         }
 
-        &:hover {
+        &--service {
+            padding: 0;
+
             img {
-                scale: 1.1;
+                aspect-ratio: 16/9;
+                object-fit: cover;
             }
-        }
-    }
-}
 
-
-// -----------------------------------------------------------------------------
-// Services Page
-// -----------------------------------------------------------------------------
-
-.services .auto-grid {
-    --placement: auto-fill;
-    --min-col-size: clamp(18rem, 33%, 23rem);
-    --gap: var(--size-m);
-}
-
-.service.card {
-    --border: 1px solid var(--neutral-100);
-    --text-decoration: none;
-
-    box-shadow: #{$box-shadow-small};
-    transition: box-shadow 500ms ease;
-
-    .card__image img {
-        transition: scale 500ms ease;
-    }
-
-    &:is(:hover) {
-
-        box-shadow: #{$box-shadow-medium};
-
-        .card__image img {
-            scale: 1.1;
+            & > :not(img) {
+                margin-inline: var(--space-m);
+    
+                &:last-child {
+                    margin-block-end: var(--space-s);
+                }
+            }
         }
 
         .button {
-            --foreground: var(--neutral-800);
-            --background: var(--accent-400);
-    
-            &:is(:hover) {
-                --foreground: var(--neutral-900);
-                --background: var(--accent-300);
-            }
-    
-            &:is(:active) {
-                --foreground: var(--neutral-950);
-                --background: var(--accent-500);
+            justify-self: start;
+        }
+    }
+}
+
+.service {
+
+    &--single {
+        --content-max-width: 75ch;
+
+        :is(h1) {
+            margin-top: 0;
+        }
+
+        :is(p) {
+            max-width: unset;
+        }
+    }
+}
+
+.service__icon {
+    height: 7ex;
+    margin-inline: auto;
+}
+
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.about {
+    &--content {
+        --content-max-width: 65ch;
+        & > :is(p) {
+            max-width: unset;
+        }
+    }
+}
+
+
+//
+//
+//
+
+.gallery {
+    &__list {}
+
+    &__item {
+        position: relative;
+        overflow: clip;
+        border-radius: .5rem;
+    }
+
+    &__image {
+        object-fit: cover;
+        scale: 1;
+        transition: scale 400ms ease-in-out;
+    }
+}
+
+.gallery__item:hover .gallery__image {
+    scale: 1.2
+}
+
+
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.cta {
+    .block__subtitle {
+        --heading-foreground: var(--primary-950);
+        --heading-font-weight: var(--fw-bold);
+    }
+}
+
+
+
+
+// -----------------------------------------------------------------------------
+// PAGE: About
+// -----------------------------------------------------------------------------
+
+.about {
+    .grid {
+        --grid-gap: var(--space-l-2xl);
+        align-items: center;
+
+        & > div > img {
+            height: 32ex;
+            margin-inline: auto;
+        }
+    }
+}
+
+
+
+.about_one,
+.about_two,
+.about_three,
+.about_four {
+    .grid {
+        --grid-gap: var(--space-l-2xl);
+        align-items: center;
+
+        & > div > img {
+            height: 48ex;
+            margin-inline: auto;
+        }
+
+        @include mq(md) {
+            &.is-reversed {
+                & > :first-child {
+                    order: 2;
+                }
+        
+                & > :last-child {
+                    order: 1;
+                }
             }
         }
     }
@@ -267,47 +386,25 @@ h3 {
 
 
 // -----------------------------------------------------------------------------
-// Contact
+// PAGINA: Offerte
 // -----------------------------------------------------------------------------
 
-.form.content-grid,
-.narrow.content-grid {
-    --content-max-width: var(--wrapper-sm);
-    --bleed-max-width: var(--wrapper-md);
-}
-
-.narrow.content-grid {
-    img {
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        width: 100%;
-        border-radius: .75em;
+.offerte {
+    &--content {
+        --content-max-width: 65ch;
     }
 }
 
 
-
 // -----------------------------------------------------------------------------
-// Misc.
+// PAGINA: Contact
 // -----------------------------------------------------------------------------
 
-.socials-list {
-    display: flex;
-    gap: var(--size-s);
-    list-style: none inside;
-    align-items: center;
+.map {
+    position: relative;
+    overflow: clip;
 
-    &--center {
-        justify-content: center;
+    iframe {
+        height: 40dvh;
     }
-}
-
-
-.text--center {
-    text-align: center;
-}
-
-
-.bg-gradient-gold {
-    background: linear-gradient(45deg, var(--accent-300), var(--accent-600));
 }

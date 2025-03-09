@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/DancingScript.woff2') format('woff2-variations');
+    font-weight: 400 700;
+    font-display: swap;
+}
+
+// -----------------------------------------------------------------------------
+// FONT FAMILIE(s)
+// -----------------------------------------------------------------------------
+
+$-ff-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$-ff-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+$-ff-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+
+$font-families: (
+    "sans": $-ff-sans,
+    "serif": $-ff-serif,
+    "mono": $-ff-mono,
+    "accent": "'Dancing Script', cursive, serif",
+);
+
+
+
+// -----------------------------------------------------------------------------
+// FONT SIZE(s)
+// -----------------------------------------------------------------------------
+
+$font-sizes: (
+    /* @link https://utopia.fyi/type/calculator?c=320,16,1.25,1536,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+    "200": clamp(0.6252rem, 0.6439rem + -0.0195vw, 0.64rem),
+    "300": clamp(0.8rem, 0.7779rem + 0.1105vw, 0.884rem),
+    "400": clamp(1rem, 0.9342rem + 0.3289vw, 1.25rem),
+    "500": clamp(1.25rem, 1.1138rem + 0.6809vw, 1.7675rem),
+    "600": clamp(1.5625rem, 1.316rem + 1.2326vw, 2.4992rem),
+    "700": clamp(1.9531rem, 1.5371rem + 2.08vw, 3.5339rem),
+    "800": clamp(2.4414rem, 1.7689rem + 3.3626vw, 4.997rem),
+    "900": clamp(3.0518rem, 1.9954rem + 5.2815vw, 7.0657rem),
+);
+
+
+// -----------------------------------------------------------------------------
+// FONT WEIGHT(s)
+// -----------------------------------------------------------------------------
+
+$font-weights: (
+    "thin": 100,
+    "extralight": 200,
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700,
+    "extrabold": 800,
+    "black": 900,
+);

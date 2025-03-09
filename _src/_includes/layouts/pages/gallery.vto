@@ -1,0 +1,20 @@
+---
+layout: layouts/page.vto
+---
+
+<section class="[ gallery ] [ full-width ] [ flow region ]">
+    <div class="block">
+        <span class="block__title">{{ section_gallery.block_title }}</span>
+        <h2 class="block__subtitle">{{ section_gallery.title }}</h2>
+    </div>
+    {{- content |> md -}}
+    <ul class="gallery grid" data-cols="thirds" data-rows="masonary" role="list">
+        {{ for image of section_gallery.images }}
+            <li class="gallery__item">
+                <a href="{{ image.path }}" data-fslightbox="gallery">
+                    <img class="gallery__image" src="{{ image.path }}" alt="{{ image.alt }}">
+                </a>
+            </li>
+        {{ /for }}
+    </ul>
+</section>
