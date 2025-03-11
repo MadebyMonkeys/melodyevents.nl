@@ -170,22 +170,40 @@ h3, .h3 {
 .services {
     --grid-gap: var(--space-s-l);
     .card {
-        overflow: clip;
-        display: grid;
-        border: 1px solid var(--neutral-50);
         max-width: unset;
         transition: box-shadow 300ms ease-in-out;
+
+        &__image {
+            position: relative;
+            overflow: clip;
+            img {
+                aspect-ratio: 3/2;
+                object-fit: cover;
+                transition: scale 600ms ease-in-out;
+            }
+        }
 
         &__title {
             --heading-foreground: var(--neutral-800);
             --heading-font-size: var(--fs-500);
             --heading-font-weight: var(--fw-semibold);
-            max-width: unset;
             margin-block-start: 0;
+        }
+
+        &__content :is(p) {
+            max-width: 100%;
         }
 
         .button {
             justify-self: start;
+        }
+
+        &:hover {
+            .card__image {
+                img {
+                    scale: 1.2;
+                }
+            }
         }
     }
 }

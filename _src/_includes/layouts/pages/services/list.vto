@@ -11,7 +11,9 @@ layout: layouts/page.vto
     {{ set services = search.pages("type=service", "order") }}
     {{ for service of services }}
         <li class="card">
-            <img src="{{ service.image }}" alt="{{ service.alt }}">
+            <div class="card__image">
+                <img src="{{ service.image }}" alt="{{ service.alt }}">
+            </div>
             <div class="card__content flow">
                 <h3 class="card__title">{{ service.title }}</h3>
                 {{ service.description |> md }}
