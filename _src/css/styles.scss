@@ -72,9 +72,6 @@ h3, .h3 {
 
 
 
-
-
-
 // -----------------------------------------------------------------------------
 // Branding
 // -----------------------------------------------------------------------------
@@ -86,58 +83,6 @@ h3, .h3 {
 
     &__name {
         text-decoration: none;
-    }
-}
-
-
-// -----------------------------------------------------------------------------
-// Hamburger
-// -----------------------------------------------------------------------------
-
-.hamburger {
-    position: relative;
-    width: 56px;
-    height: 56px;
-    border: none;
-    border-radius: 999rem;
-    background: var(--primary-300);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @include mq(md) {
-        display: none;
-    }
-
-    &__icon {
-        width: 56px;
-        height: 36px;
-        display: block;
-        padding: 8px;
-
-        line {
-            transform-origin: center center;
-            stroke: var(--primary-900);
-            stroke-width: 4;
-            stroke-linecap: round;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-    }
-}
-
-.site-header:has([aria-expanded="true"]) .hamburger__icon {
-    margin-left: -10px;
-
-    & line:nth-child(1) {
-        transform: translateY(6px) rotate(45deg);
-    }
-
-    & line:nth-child(2) {
-        opacity: 0;
-    }
-
-    & line:nth-child(3) {
-        transform: translateY(-6px) rotate(-45deg);
     }
 }
 
@@ -233,10 +178,10 @@ h3, .h3 {
 
         &__title {
             --heading-foreground: var(--neutral-800);
-            --heading-font-family: var(--ff-sans);
-            --heading-font-size: var(--fs-400);
-            --heading-font-weight: var(--fw-bold);
+            --heading-font-size: var(--fs-500);
+            --heading-font-weight: var(--fw-semibold);
             max-width: unset;
+            margin-block-start: var(--space-s);
         }
 
         &--service {
@@ -249,7 +194,7 @@ h3, .h3 {
 
             & > :not(img) {
                 margin-inline: var(--space-m);
-    
+
                 &:last-child {
                     margin-block-end: var(--space-s);
                 }
@@ -278,8 +223,17 @@ h3, .h3 {
 }
 
 .service__icon {
+    display: flex;
+    justify-self: center;
     height: 7ex;
-    margin-inline: auto;
+    margin-block-end: var(--space-s-l);
+}
+
+
+.post-card {
+    display: grid;
+    gap: var();
+    
 }
 
 
@@ -407,4 +361,36 @@ h3, .h3 {
     iframe {
         height: 40dvh;
     }
+}
+
+.social {
+    ion-icon {
+        font-size: 48px;
+        color: var(--primary-600);
+
+        &:hover {
+            color: var(--primary-700);
+        }
+    }
+}
+
+
+
+//
+//
+//
+
+.site-footer {
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+.mbm {
+    text-align: center;
+    padding-block: 0 #{$region-space};
 }

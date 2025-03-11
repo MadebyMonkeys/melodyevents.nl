@@ -19,11 +19,13 @@ layout: layouts/page.vto
     </div>
     <ul class="grid" data-cols="thirds" role="list">
     {{ for service of section_services.list }}
-        <li class="card flow">
-            <img class="service__icon" src="{{ service.icon }}" inline />
-            <h3 class="card__title">{{ service.name }}</h3>
-            {{ service.body |> md }}
-            <a href="{{ service.url }}" class="button" data-button-ghost>Meer informatie</a>
+        <li class="card">
+            <div class="card__content flow">
+                <img class="service__icon" src="{{ service.icon }}" inline />
+                <h3 class="card__title">{{ service.name }}</h3>
+                {{ service.body |> md }}
+                <a href="{{ service.url }}" class="button" data-button-ghost>Meer informatie</a>
+            </div>
         </li>
     {{ /for }}
     </ul>

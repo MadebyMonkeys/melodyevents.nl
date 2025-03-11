@@ -16,9 +16,12 @@
     background: var(--_card-background);
     display: grid;
     gap: var(--_card-flow);
-    padding: var(--_card-padding);
     border-radius: var(--_card-border-radius);
     box-shadow: var(--_card-box-shadow);
+
+    &__content {
+        padding: var(--_card-padding);
+    }
 
     &:hover {
         --card-box-shadow: #{$card-shadow-hover};

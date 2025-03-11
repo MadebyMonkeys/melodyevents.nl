@@ -92,7 +92,20 @@ $site-nav-link-line-height: 1.1;
 $site-nav-link-border-radius: var(--space-3xs);
 
 
+// -----------------------------------------------------------------------------
+// Hamburger
+// -----------------------------------------------------------------------------
 
+$hamburger-bar-color: var(--neutral-50);
+$hamburger-bar-width: 24px;
+$hamburger-bar-height: 4px;
+$hamburger-bar-gap: 4px;
+
+$hamburger-background: var(--primary-500);
+$hamburger-padding: var(--space-xs);
+$hamburger-animation-timing: 200ms ease-in-out;
+$hamburger-border: none;
+$hamburger-border-radius: 999rem;
 
 
 // -----------------------------------------------------------------------------
@@ -103,7 +116,7 @@ $button-foreground: var(--neutral-50);
 $button-foreground-hover: var(--neutral-50);
 
 $button-background: var(--primary-800);
-$button-background-hover: var(--primary-900);
+$button-background-hover: var(--primary-950);
 
 $button-accent-foreground: var(--primary-900);
 $button-accent-foreground-hover: $button-foreground-hover;

@@ -14,15 +14,15 @@ layout: layouts/page.vto
         <ul class="company-info flow" role="list">
             <li class="flex-group"><ion-icon name="pin"></ion-icon> {{ company.address.street }} <br> {{ company.address.zipcode }} {{ company.address.city }}</li>
             <li class="flex-group"><ion-icon name="call"></ion-icon> <a href="tel:{{ company.phone }}">{{ company.phone }}</a></li>
-            <li class="flex-group"><span class="fs-400 fw-medium">KVK nummer:</span> {{ company.kvk_nummer }}</li>
-            <li class="flex-group"><span class="fs-400 fw-medium">BTW nummer:</span> {{ company.btw_nummer }}</li>
+            <li class="flex-group"><small class="fw-bold">KVK:</small> {{ company.kvk_nummer }}</li>
+            <li class="flex-group"><small class="fw-bold">BTW:</small> {{ company.btw_nummer }}</li>
         </ul>
 
         <div class="socials flow">
-            <h3>Onze socials</h3>
-            <div class="social-links">
+            <h4 class="fs-500">Onze socials</h4>
+            <div class="cluster">
                 {{ for social of company.socials }}
-                    <a href="{{ social.url }}" class="social"><ion-icon size="xlarge" name="{{ social.icon }}"></ion-icon></a>
+                    <a href="{{ social.url }}" class="social"><ion-icon name="{{ social.icon }}"></ion-icon></a>
                 {{ /for }}
             </div>
         </div>
