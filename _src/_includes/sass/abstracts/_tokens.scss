@@ -48,12 +48,12 @@ $heading-line-height: 1.1;
 // ANCHOR
 // -----------------------------------------------------------------------------
 
-$link-foreground: var(--neutral-800);
-$link-foreground-hover: var(--primary-400);
-$link-foreground-active: var(--neutral-800);
+$link-foreground: var(--neutral-900);
+$link-foreground-hover: var(--primary-600);
+$link-foreground-active: var(--neutral-900);
 
-$link-text-decoration: underline;
-$link-text-decoration-hover: none;
+$link-text-decoration: none;
+$link-text-decoration-hover: underline;
 
 $link-transition: 200ms ease-in-out;
 
@@ -78,7 +78,7 @@ $site-header-justify-content-large-screen: space-between;
 $site-nav-list-gap: var(--space-3xs);
 
 $site-nav-link-foreground: var(--primary-900);
-$site-nav-link-foreground-hover: var(--neutral-700);
+$site-nav-link-foreground-hover: var(--primary-700);
 $site-nav-link-foreground-active: var(--primary-800);
 
 $site-nav-link-background: transparent;
@@ -96,12 +96,12 @@ $site-nav-link-border-radius: var(--space-3xs);
 // Hamburger
 // -----------------------------------------------------------------------------
 
-$hamburger-bar-color: var(--neutral-50);
+$hamburger-bar-color: var(--primary-800);
 $hamburger-bar-width: 24px;
 $hamburger-bar-height: 4px;
 $hamburger-bar-gap: 4px;
 
-$hamburger-background: var(--primary-500);
+$hamburger-background: var(--primary-400);
 $hamburger-padding: var(--space-xs);
 $hamburger-animation-timing: 200ms ease-in-out;
 $hamburger-border: none;

@@ -12,6 +12,7 @@
     --_card-border-radius: var(--card-border-radius, #{$card-border-radius});
     --_card-box-shadow: var(--card-box-shadow, #{$card-shadow});
 
+    position: relative;
     color: var(--_card-foreground);
     background: var(--_card-background);
     display: grid;
