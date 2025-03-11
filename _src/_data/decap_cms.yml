@@ -317,6 +317,23 @@ collections:
               - { name: "block_title", label: "Block title", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
 
+
+      - name: "algemene-voorwaarden"
+        label: "Algemene voorwaarden"
+        file: "_src/algemene-voorwaarden.md"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Description", widget: "string" }
+
+          - name: "metas"
+            label: "metas"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "string" }
+
+          - { name: "body", label: "Body", widget: "markdown" }
+
   - name: "services"
     label: "Diensten"
     label_singular: "Dienst"

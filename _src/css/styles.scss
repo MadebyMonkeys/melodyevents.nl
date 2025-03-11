@@ -144,7 +144,7 @@ h3, .h3 {
     }
 
     &__inner {
-        --region-space: 12.12vmax;
+        --region-space: 7.7vmax;
         text-align: center;
         z-index: 2;
     }
@@ -374,6 +374,18 @@ h3, .h3 {
     }
 }
 
+
+//
+//
+//
+
+.algemene-voorwaarden {
+    --content-max-width: 65ch;
+
+    :is(p, li, blockquote) {
+        max-width: unset;
+    }
+}
 
 
 //
