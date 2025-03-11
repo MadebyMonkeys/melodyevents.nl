@@ -10,13 +10,15 @@ layout: layouts/page.vto
     <ul class="grid" data-cols="halfs" data-rows="masonry" role="list">
     {{ set services = search.pages("type=service", "order") }}
     {{ for service of services }}
-        <li class="card card--service flow">
+        <li class="card">
             <img src="{{ service.image }}" alt="{{ service.alt }}">
-            <h4 class="card__title">{{ service.title }}</h4>
-            {{ service.description |> md }}
-            <span>
-                <a href="{{ service.url }}" class="button" data-button-ghost>Meer informatie</a>
-            </span>
+            <div class="card__content flow">
+                <h3 class="card__title">{{ service.title }}</h3>
+                {{ service.description |> md }}
+                <footer>
+                    <a href="{{ service.url }}" class="button" data-button-ghost>Meer informatie</a>
+                </footer>
+            </div>
         </li>
     {{ /for }}
     </ul>

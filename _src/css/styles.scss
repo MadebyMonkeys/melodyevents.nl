@@ -181,24 +181,7 @@ h3, .h3 {
             --heading-font-size: var(--fs-500);
             --heading-font-weight: var(--fw-semibold);
             max-width: unset;
-            margin-block-start: var(--space-s);
-        }
-
-        &--service {
-            padding: 0;
-
-            img {
-                aspect-ratio: 16/9;
-                object-fit: cover;
-            }
-
-            & > :not(img) {
-                margin-inline: var(--space-m);
-
-                &:last-child {
-                    margin-block-end: var(--space-s);
-                }
-            }
+            margin-block-start: 0;
         }
 
         .button {

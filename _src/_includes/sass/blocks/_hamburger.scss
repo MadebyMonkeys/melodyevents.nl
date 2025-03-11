@@ -27,6 +27,7 @@
     padding: var(--_hamburger-padding);
     border: var(--_hamburger-border);
     border-radius: var(--_hamburger-border-radius);
+    z-index: 1;
 
     .bar {
         transform-origin: left center;
@@ -35,6 +36,7 @@
         background: var(--_hamburger-bar-color);
         transition: opacity var(--_hamburger-animation-timing), width var(--_hamburger-animation-timing), translate var(--_hamburger-animation-timing), rotate var(--_hamburger-animation-timing);
         border-radius: 9999px;
+        z-index: 2;
     }
 }
 
