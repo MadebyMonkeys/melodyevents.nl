@@ -1,14 +1,14 @@
 ---
 title: "Afghaanse Huwelijken"
 description: "Een Afghaanse bruiloft is een uitbundige viering vol tradities, rituelen, muziek, dans, gastvrijheid en cultuur, waarbij liefde en familie centraal staan."
-image: "/uploads/afghaanse-huwelijken-featured.jpg"
+image: "/uploads/afghaanse-huwelijken-featured.webp"
 order: 5
 draft: false
 ---
 
 # Marokkaanse Huwelijken
 
-![Afghaanse huwelijken](/uploads/afghaanse-huwelijken-featured.jpg)
+![Afghaanse huwelijken](/uploads/afghaanse-huwelijken-featured.webp)
 
 Een Afghaanse bruiloft, ook wel bekend als 'Aroosi', is een belangrijke en uitbundige viering die diepgeworteld is in de Afghaanse cultuur en tradities. Het is een gelegenheid waarbij families samenkomen om de verbintenis van het bruidspaar te vieren en om hun geluk en zegen uit te spreken voor een voorspoedige toekomst.
 

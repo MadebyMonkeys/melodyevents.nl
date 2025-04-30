@@ -45,24 +45,24 @@ section_about:
   block_title: "Over ons"
   title: "Wie zijn wij?"
   body: "Melody Events is al jaren een betrouwbare partner voor evenementen, van bruiloften tot zakelijke bijeenkomsten. Met onze ervaring en oog voor detail maken we elk moment uniek en onvergetelijk"
-  image: "/uploads/melody-2.jpg"
+  image: "/uploads/melody-2.webp"
   alt: "about image"
 
 section_gallery:
   block_title: "De ruimte"
   title: "Een aantal fotos van de ruimte"
   images:
-    - path: "/uploads/ingang-hoek-2.png"
+    - path: "/uploads/ingang-hoek-2.webp"
       alt: "Image 1"
-    - path: "/uploads/ingang-voor-2.png"
+    - path: "/uploads/ingang-voor-2.webp"
       alt: "Image 2"
-    - path: "/uploads/zaal-achter-d.jpeg"
+    - path: "/uploads/zaal-achter-d.webp"
       alt: "Image 3"
-    - path: "/uploads/zaal-midden-c.jpeg"
+    - path: "/uploads/zaal-midden-c.webp"
       alt: "Image 4"
-    - path: "/uploads/zaal-podium.jpeg"
+    - path: "/uploads/zaal-podium.webp"
       alt: "Image 5"
-    - path: "/uploads/zaal-schuin.jpeg"
+    - path: "/uploads/zaal-schuin.webp"
       alt: "Image 6"
 
 section_cta:
