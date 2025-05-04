@@ -12,7 +12,7 @@ content:
       - name: "settings"
         label: "Site Settings"
         path: "site.yml"
-        type: file
+        type: object
         fields:
           - { name: "name", label: "Naam", type: "string" }
           - name: "metas"
@@ -28,7 +28,7 @@ content:
       - name: "company"
         label: "Company Settings"
         path: "company.yml"
-        type: file
+        type: object
         fields:
           - { name: "logo", label: "Logo", type: "image" }
           - { name: "name", label: "Naam", type: "string" }
