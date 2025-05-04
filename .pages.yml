@@ -1,0 +1,19 @@
+media:
+  input: static/uploads
+  output: uploads
+content:
+  - name: "settings"
+    label: "Settings"
+    path: "_src/_data/site.yml"
+    type: file
+    fields:
+      - { name: "name", label: "Naam", type: "string" }
+      - name: "metas"
+        label: "metas"
+        type: "object"
+        fields:
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "description", label: "Description", type: "string" }
+          - { name: "icon", label: "Icon", type: "image" }
+          - { name: "lang", label: "Language", type: "string" }
+          - { name: "generator", label: "Generator", type: "boolean" }
