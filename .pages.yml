@@ -4,11 +4,8 @@ media:
 content:
   - name: "settings"
     label: "Site Settings"
-    path: "_src"
+    path: "_src/_data"
     type: collection
-    options:
-      path: "_data"
-      extentions: [yaml]
     fields:
       - name: "settings"
         label: "Site Settings"
