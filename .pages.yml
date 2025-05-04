@@ -2,12 +2,13 @@ media:
   input: _src/static/uploads
   output: uploads
 content:
-  - name: "config"
-    label: "Configuratie"
-    path: "_src/_data"
-    type: collection
+  - name: "settings"
+    label: "Site Settings"
+    path: "_src"
+    type: file
     options:
-      multiple: true
+      path: "_data"
+      extentions: [yaml]
 
   - name: "homepage"
     label: "Home page"
