@@ -8,7 +8,7 @@ draft: false
 
 # Hindoestaanse Huwelijken
 
-![Hindoestaanse huwelijken](/uploads/hindoestaanse-huwelijken-featured.jpg)
+![Hindoestaanse huwelijken](/uploads/hindoestaanse-huwelijken-featured.webp)
 
 Een Hindoestaanse bruiloft, ook wel bekend als een 'Hindoe-huwelijk' of 'Vivaha', is een prachtige en kleurrijke ceremonie die diep geworteld is in eeuwenoude tradities en rituelen. Het is niet alleen een viering van de liefde tussen het bruidspaar, maar ook een spirituele verbinding tussen twee families en gemeenschappen.
 

@@ -8,7 +8,7 @@ draft: false
 
 # Turkse Huwelijken
 
-![Turkse huwelijken](/uploads/turkse-huwelijken-featured.jpg)
+![Turkse huwelijken](/uploads/turkse-huwelijken-featured.webp)
 
 Een Turks bruiloftsfeest is een levendige en kleurrijke viering die doordrenkt is van traditie en symboliek. Het begint vaak met een verloving, waarbij families samenkomen om de verloving van het paar te vieren. Dit wordt gevolgd door verschillende ceremonies en festiviteiten, die meestal over meerdere dagen worden uitgespreid.
 

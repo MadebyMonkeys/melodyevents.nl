@@ -8,7 +8,7 @@ draft: false
 
 # Marokkaanse Huwelijken
 
-![Marokkaanse huwelijken](/uploads/marokkaanse-huwelijken-featured.jpg)
+![Marokkaanse huwelijken](/uploads/marokkaanse-huwelijken-featured.webp)
 
 Marokkaanse bruiloften behoren tot de meest levendige en spectaculaire bruiloften ter wereld. Het is vaak een grootschalig evenement dat meerdere dagen kan duren en waarbij families, vrienden en gemeenschapsleden samenkomen om de verbintenis van het bruidspaar te vieren.
 
