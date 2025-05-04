@@ -6,6 +6,7 @@ content:
     label: "Configuratie"
     path: "_src/_data"
     type: collection
+    create: false
     fields:
       - name: "settings"
         label: "Site Settings"
