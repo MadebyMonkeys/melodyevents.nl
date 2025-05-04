@@ -277,6 +277,20 @@ content:
           - { name: "description", label: "Description", type: "string" }
 
       - { name: "body", label: "Body", type: "rich-text" }
+
+
+
+  - name: "services"
+    label: "Services"
+    path: "_src/diensten"
+    type: collection
+    fields:
+      - { name: order, label: "Volgorde nummer", type: "string" }
+      - { name: "title", label: "Title", type: "string" }
+      - { name: "description", label: "Description", type: "text" }
+      - { name: "image", label: "Image", type: "image" }
+      - { name: "body", label: "Body", type: "text" }
+      - { name: "draft", label: "Published", type: "boolean", default: true }
     
   
 
