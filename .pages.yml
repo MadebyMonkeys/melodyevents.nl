@@ -5,8 +5,9 @@ content:
   - name: "config"
     label: "Configuratie"
     path: "_src/_data"
-    type: collection
-    create: false
+    type: file
+    options:
+      multiple: true
     fields:
       - name: "settings"
         label: "Site Settings"
