@@ -190,6 +190,34 @@ content:
           - { name: "image", label: "Image", type: "image", default: "/images/undraw_effortless-love.svg" }
           - { name: "alt", label: "Image description", type: "string" }
 
+  - name: "gallery"
+    label: "Gallery"
+    path: "_src/galerij.md"
+    type: file
+    fields:
+      - { name: title, label: "Pagina title", type: "string" }
+      - { name: description, label: "Pagina beschrijving", type: "string" }
+
+      - name: "metas"
+        label: "metas"
+        type: "object"
+        fields:
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "description", label: "Description", type: "string" }
+
+      - name: section_gallery
+        label: Galerij block
+        type: object
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - name: "images"
+            label: "Gallery images"
+            type: "image"
+            options:
+              multiple: true
+              multiple.max: 6
+
 
   - name: "services"
     label: "Services page"
