@@ -41,9 +41,7 @@ content:
   - name: "pages"
     label: "Pages"
     path: "_src"
-    type: file
-    options:
-      multiple: true
+    type: collection
     fields:
       - name: "homepage"
         label: "Home page"
