@@ -40,7 +40,10 @@ content:
     
   - name: "pages"
     label: "Pages"
-    type: collection
+    path: "_src"
+    type: file
+    options:
+      multiple: true
     fields:
       - name: "homepage"
         label: "Home page"
