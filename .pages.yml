@@ -3,7 +3,7 @@ media:
   output: uploads
 content:
   - name: "settings"
-    label: "Settings"
+    label: "Site Settings"
     path: "_src/_data/site.yml"
     type: file
     fields:
@@ -17,3 +17,23 @@ content:
           - { name: "icon", label: "Icon", type: "image" }
           - { name: "lang", label: "Language", type: "string" }
           - { name: "generator", label: "Generator", type: "boolean" }
+
+  - name: "company"
+    label: "Company Settings"
+    path: "_src/_data/company.yml"
+    type: file
+    fields:
+      - { name: "logo", label: "Logo", type: "image" }
+      - { name: "name", label: "Naam", type: "string" }
+      - { name: "phone", label: "Telefoon", type: "string" }
+      - { name: "email", label: "Email", type: "string" }
+      - { name: "kvk_nummer", label: "Kvk nummer", type: "string" }
+      - { name: "btw_nummer", label: "BTW nummer", type: "string" }
+          
+      - name: "address"
+        label: "Adress"
+        type: "object"
+        fields:
+          - { name: "street", label: "Straat", type: "string" }
+          - { name: "zipcode", label: "Postcode", type: "string" }
+          - { name: "city", label: "Stad", type: "string" }
