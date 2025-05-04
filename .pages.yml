@@ -99,8 +99,7 @@ content:
             label: "Gallery images"
             type: image
             options:
-              multiple:
-                max: 6
+              multiple: true
 
       - name: section_cta
         label: Galerij block
