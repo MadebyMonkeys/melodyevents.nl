@@ -68,20 +68,20 @@ content:
           - { name: "alt", label: "Image description", type: "string" }
 
 
-      - name: section_services
-        label: Diensten block
-        type: object
-        fields:
-          - { name: "block_title", label: "Block title", type: "string" }
-          - { name: "title", label: "Title", type: "string" }
-          - name: "list"
-            label: "Hoofd diensten"
-            type: "list"
-            fields:
-              - { name: "name", label: "Name", type: "string" }
-              - { name: "icon", label: "Icon", type: "image" }
-              - { name: "body", label: "Body", type: "text" }
-              - { name: "url", label: "Url", type: "string" }
+      # - name: section_services
+      #   label: Diensten block
+      #   type: object
+      #   fields:
+      #     - { name: "block_title", label: "Block title", type: "string" }
+      #     - { name: "title", label: "Title", type: "string" }
+      #     - name: "list"
+      #       label: "Hoofd diensten"
+      #       type: "list"
+      #       fields:
+      #         - { name: "name", label: "Name", type: "string" }
+      #         - { name: "icon", label: "Icon", type: "image" }
+      #         - { name: "body", label: "Body", type: "text" }
+      #         - { name: "url", label: "Url", type: "string" }
 
 
       - name: section_about
@@ -276,7 +276,7 @@ content:
           - { name: "title", label: "Title", type: "string" }
           - { name: "description", label: "Description", type: "string" }
 
-      - { name: "body", label: "Body", type: rich-text }
+      - { name: "body", label: "Body", type: "rich-text" }
     
   
 
