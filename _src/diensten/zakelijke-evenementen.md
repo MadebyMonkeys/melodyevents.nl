@@ -1,7 +1,7 @@
 ---
 title: "Zakelijke Evenementen"
 description: "Onze feestzaal biedt ruimte voor diverse evenementen, van religieuze bijeenkomsten en culturele vieringen tot bedrijfsbijeenkomsten, feesten en educatieve workshops, met een prachtig terras voor zomerse evenementen."
-image: "/uploads/ibiza_wedding_elinenijburgphotography-193.jpg"
+image: "/uploads/business-events.jpg"
 order: 6
 draft: false
 ---
