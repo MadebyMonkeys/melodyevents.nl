@@ -305,7 +305,7 @@ content:
   - name: "services"
     label: "Services"
     path: "_src/diensten"
-    type: collection
+    type: file
     fields:
       - { name: "order", label: "Volgorde nummer", type: "string" }
       - { name: "title", label: "Title", type: "string" }
