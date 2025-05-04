@@ -5,7 +5,7 @@ content:
   - name: "settings"
     label: "Site Settings"
     path: "_src/_data/site.yml"
-    type: object
+    type: collection
     fields:
       - name: "settings"
         label: "Site Settings"
