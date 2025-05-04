@@ -11,8 +11,8 @@ layout: layouts/page.vto
     <ul class="gallery grid" data-cols="thirds" data-rows="masonary" role="list">
         {{ for image of section_gallery.images }}
             <li class="gallery__item">
-                <a href="{{ image.path }}" data-fslightbox="gallery">
-                    <img class="gallery__image" src="{{ image.path }}" alt="{{ image.alt }}">
+                <a href="{{ image }}" data-fslightbox="gallery">
+                    <img class="gallery__image" src="{{ image }}" alt="Gallerij foto">
                 </a>
             </li>
         {{ /for }}
