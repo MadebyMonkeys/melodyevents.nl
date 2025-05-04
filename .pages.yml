@@ -307,7 +307,7 @@ content:
     path: "_src/diensten"
     type: collection
     view:
-      fields: [ title, date ]
+      fields: [ image, title ]
     fields:
       - { name: "order", label: "Volgorde nummer", type: "string" }
       - { name: "title", label: "Title", type: "string" }
