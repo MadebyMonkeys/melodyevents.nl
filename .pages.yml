@@ -306,6 +306,8 @@ content:
     label: "Services"
     path: "_src/diensten"
     type: collection
+    view:
+      fields: [ title, date ]
     fields:
       - { name: "order", label: "Volgorde nummer", type: "string" }
       - { name: "title", label: "Title", type: "string" }
