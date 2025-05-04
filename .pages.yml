@@ -122,6 +122,73 @@ content:
             fields:
               - { name: "title", label: "title", type: "string" }
               - { name: "url", label: "Url", type: "string" }
+
+  - name: "about"
+    label: "About"
+    path: "_src/over-ons.md"
+    type: file
+    fields:
+      - { name: title, label: "Pagina title", type: "string" }
+      - { name: description, label: "Pagina beschrijving", type: "string" }
+
+      - name: "metas"
+        label: "metas"
+        type: "object"
+        fields:
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "description", label: "Description", type: "string" }
+
+      - name: "section_hero"
+        label: "Hero Block"
+        type: "object"
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "body", label: "Body", type: "string" }
+          - { name: "image", label: "Image", type: "image", default: "/images/undraw_pure-love.svg" }
+          - { name: "alt", label: "Image description", type: "string" }
+
+
+      - name: "section_one"
+        label: "Location Block"
+        type: "object"
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "body", label: "Body", type: "string" }
+          - { name: "image", label: "Image", type: "image", default: "/images/undraw_partying.svg" }
+          - { name: "alt", label: "Image description", type: "string" }
+
+      - name: "section_two"
+        label: "Team Block"
+        type: "object"
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "body", label: "Body", type: "string" }
+          - { name: "image", label: "Image", type: "image", default: "/images/undraw_team.svg" }
+          - { name: "alt", label: "Image description", type: "string" }
+
+
+      - name: "section_three"
+        label: "Werkwijzen Block"
+        type: "object"
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "body", label: "Body", type: "string" }
+          - { name: "image", label: "Image", type: "image", default: "/images/undraw_dreamer.svg" }
+          - { name: "alt", label: "Image description", type: "string" }
+
+      - name: "section_four"
+        label: "Ervaringen Block"
+        type: "object"
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "body", label: "Body", type: "string" }
+          - { name: "image", label: "Image", type: "image", default: "/images/undraw_effortless-love.svg" }
+          - { name: "alt", label: "Image description", type: "string" }
     
     
   
