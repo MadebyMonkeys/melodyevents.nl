@@ -1,7 +1,7 @@
 ---
 title: "Turkse Huwelijken"
 description: "Een Turks bruiloftsfeest is een levendige viering met verloving, uitgebreid diner, henna-avond, traditionele dans en veel gastvrijheid, waarbij familie en gemeenschap samenkomen in vreugde."
-image: "/uploads/turkse-huwelijken-featured.jpg"
+image: "/uploads/turkse-huwelijken-featured.webp"
 order: 2
 draft: false
 ---
