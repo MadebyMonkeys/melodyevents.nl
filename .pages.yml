@@ -37,273 +37,267 @@ content:
           - { name: "zipcode", label: "Postcode", type: "string" }
           - { name: "city", label: "Stad", type: "string" }
       
-    
-  - name: "pages"
-    label: "Pages"
-    path: "_src"
-    type: collection
+  - name: "homepage"
+    label: "Home page"
+    path: "_src/index.md"
+    type: file
     fields:
-      - name: "homepage"
-        label: "Home page"
-        path: "_src/index.md"
-        type: file
-        fields:
-          - { name: title, label: "Pagina title", type: "string" }
-          - { name: description, label: "Pagina beschrijving", type: "string" }
-    
-          - name: "metas"
-            label: "metas"
-            type: "object"
-            fields:
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "description", label: "Description", type: "string" }
-    
-          - name: section_hero
-            label: Hero Block
-            type: object
-            fields:
-              - { name: "block_title", label: "Block title", type: "string" }
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "image", label: "Image", type: "image" }
-              - { name: "alt", label: "Image description", type: "string" }
-    
-    
-          # - name: section_services
-          #   label: Diensten block
-          #   type: object
-          #   fields:
-          #     - { name: "block_title", label: "Block title", type: "string" }
-          #     - { name: "title", label: "Title", type: "string" }
-          #     - name: "list"
-          #       label: "Hoofd diensten"
-          #       type: "list"
-          #       fields:
-          #         - { name: "name", label: "Name", type: "string" }
-          #         - { name: "icon", label: "Icon", type: "image" }
-          #         - { name: "body", label: "Body", type: "text" }
-          #         - { name: "url", label: "Url", type: "string" }
-    
-    
-          - name: section_about
-            label: About Block
-            type: object
-            fields:
-              - { name: "block_title", label: "Block title", type: "string" }
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "image", label: "Image", type: "image" }
-              - { name: "alt", label: "Image description", type: "string" }
-    
-    
-          - name: section_gallery
-            label: Galerij block
-            type: object
-            fields:
-              - { name: "block_title", label: "Block title", type: "string" }
-              - { name: "title", label: "Title", type: "string" }
-              - name: "images"
-                label: "Gallery images"
-                type: image
-                options:
-                  multiple: true
-    
-          - name: section_cta
-            label: Galerij block
-            type: object
-            fields:
-              - { name: "block_one_title", label: "Block 1 title", type: "string" }
-              - { name: "block_one_body", label: "text", type: "text" }
-              - name: "button_one"
-                label: "Button"
-                type: "object"
-                fields:
-                  - { name: "title", label: "title", type: "string" }
-                  - { name: "url", label: "Url", type: "string" }
-    
-              - { name: "block_two_title", label: "Block 1 title", type: "string" }
-              - { name: "block_two_body", label: "text", type: "text" }
-              - name: "button_two"
-                label: "Button"
-                type: "object"
-                fields:
-                  - { name: "title", label: "title", type: "string" }
-                  - { name: "url", label: "Url", type: "string" }
-    
-      - name: "about"
-        label: "About page"
-        path: "_src/over-ons.md"
-        type: file
-        fields:
-          - { name: title, label: "Pagina title", type: "string" }
-          - { name: description, label: "Pagina beschrijving", type: "string" }
-    
-          - name: "metas"
-            label: "metas"
-            type: "object"
-            fields:
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "description", label: "Description", type: "string" }
-    
-          - name: "section_hero"
-            label: "Hero Block"
-            type: "object"
-            fields:
-              - { name: "block_title", label: "Block title", type: "string" }
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "body", label: "Body", type: "string" }
-              - { name: "image", label: "Image", type: "image", default: "/images/undraw_pure-love.svg" }
-              - { name: "alt", label: "Image description", type: "string" }
-    
-    
-          - name: "section_one"
-            label: "Location Block"
-            type: "object"
-            fields:
-              - { name: "block_title", label: "Block title", type: "string" }
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "body", label: "Body", type: "string" }
-              - { name: "image", label: "Image", type: "image", default: "/images/undraw_partying.svg" }
-              - { name: "alt", label: "Image description", type: "string" }
-    
-          - name: "section_two"
-            label: "Team Block"
-            type: "object"
-            fields:
-              - { name: "block_title", label: "Block title", type: "string" }
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "body", label: "Body", type: "string" }
-              - { name: "image", label: "Image", type: "image", default: "/images/undraw_team.svg" }
-              - { name: "alt", label: "Image description", type: "string" }
-    
-    
-          - name: "section_three"
-            label: "Werkwijzen Block"
-            type: "object"
-            fields:
-              - { name: "block_title", label: "Block title", type: "string" }
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "body", label: "Body", type: "string" }
-              - { name: "image", label: "Image", type: "image", default: "/images/undraw_dreamer.svg" }
-              - { name: "alt", label: "Image description", type: "string" }
-    
-          - name: "section_four"
-            label: "Ervaringen Block"
-            type: "object"
-            fields:
-              - { name: "block_title", label: "Block title", type: "string" }
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "body", label: "Body", type: "string" }
-              - { name: "image", label: "Image", type: "image", default: "/images/undraw_effortless-love.svg" }
-              - { name: "alt", label: "Image description", type: "string" }
-    
-      - name: "gallery"
-        label: "Gallery"
-        path: "_src/galerij.md"
-        type: file
-        fields:
-          - { name: title, label: "Pagina title", type: "string" }
-          - { name: description, label: "Pagina beschrijving", type: "string" }
-    
-          - name: "metas"
-            label: "metas"
-            type: "object"
-            fields:
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "description", label: "Description", type: "string" }
-    
-          - name: section_gallery
-            label: Galerij block
-            type: object
-            fields:
-              - { name: "block_title", label: "Block title", type: "string" }
-              - { name: "title", label: "Title", type: "string" }
-              - name: "images"
-                label: "Gallery images"
-                type: "image"
-                options:
-                  multiple: true
-                  multiple.max: 6
-    
-    
-      - name: "services"
-        label: "Services page"
-        path: "_src/diensten.md"
-        type: file
-        fields:
-          - { name: title, label: "Pagina title", type: "string" }
-          - { name: description, label: "Pagina beschrijving", type: "string" }
-    
-          - name: "metas"
-            label: "metas"
-            type: "object"
-            fields:
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "description", label: "Description", type: "string" }
-    
-          - name: "section_services"
-            label: "Services block"
-            type: "object"
-            fields:
-              - { name: "block_title", label: "Block title", type: "string" }
-              - { name: "title", label: "Title", type: "string" }
-    
-    
-      - name: "contact"
-        label: "Contact page"
-        path: "_src/contact.md"
-        type: file
-        fields:
-          - { name: title, label: "Pagina title", type: "string" }
-          - { name: description, label: "Pagina beschrijving", type: "string" }
-    
-          - name: "metas"
-            label: "metas"
-            type: "object"
-            fields:
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "description", label: "Description", type: "string" }
-    
-          - { name: body, label: "content", type: "text" }
-    
-    
-      - name: "offerte"
-        label: "Quote page"
-        path: "_src/offerte.md"
-        type: file
-        fields:
-          - { name: title, label: "Pagina title", type: "string" }
-          - { name: description, label: "Pagina beschrijving", type: "string" }
-    
-          - name: "metas"
-            label: "metas"
-            type: "object"
-            fields:
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "description", label: "Description", type: "string" }
-    
-          - name: "section_offerte"
-            label: "Offerte block"
-            type: "object"
-            fields:
-              - { name: "block_title", label: "Block title", type: "string" }
-              - { name: "title", label: "Title", type: "string" }
-    
-    
-      - name: "algemene-voorwaarden"
-        label: "Algemene voorwaarden"
-        path: "_src/algemene-voorwaarden.md"
-        type: file
+      - { name: title, label: "Pagina title", type: "string" }
+      - { name: description, label: "Pagina beschrijving", type: "string" }
+
+      - name: "metas"
+        label: "metas"
+        type: "object"
         fields:
           - { name: "title", label: "Title", type: "string" }
           - { name: "description", label: "Description", type: "string" }
-    
-          - name: "metas"
-            label: "metas"
+
+      - name: section_hero
+        label: Hero Block
+        type: object
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "image", label: "Image", type: "image" }
+          - { name: "alt", label: "Image description", type: "string" }
+
+
+      # - name: section_services
+      #   label: Diensten block
+      #   type: object
+      #   fields:
+      #     - { name: "block_title", label: "Block title", type: "string" }
+      #     - { name: "title", label: "Title", type: "string" }
+      #     - name: "list"
+      #       label: "Hoofd diensten"
+      #       type: "list"
+      #       fields:
+      #         - { name: "name", label: "Name", type: "string" }
+      #         - { name: "icon", label: "Icon", type: "image" }
+      #         - { name: "body", label: "Body", type: "text" }
+      #         - { name: "url", label: "Url", type: "string" }
+
+
+      - name: section_about
+        label: About Block
+        type: object
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "image", label: "Image", type: "image" }
+          - { name: "alt", label: "Image description", type: "string" }
+
+
+      - name: section_gallery
+        label: Galerij block
+        type: object
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - name: "images"
+            label: "Gallery images"
+            type: image
+            options:
+              multiple: true
+
+      - name: section_cta
+        label: Galerij block
+        type: object
+        fields:
+          - { name: "block_one_title", label: "Block 1 title", type: "string" }
+          - { name: "block_one_body", label: "text", type: "text" }
+          - name: "button_one"
+            label: "Button"
             type: "object"
             fields:
-              - { name: "title", label: "Title", type: "string" }
-              - { name: "description", label: "Description", type: "string" }
-    
-          - { name: "body", label: "Body", type: rich-text }
+              - { name: "title", label: "title", type: "string" }
+              - { name: "url", label: "Url", type: "string" }
+
+          - { name: "block_two_title", label: "Block 1 title", type: "string" }
+          - { name: "block_two_body", label: "text", type: "text" }
+          - name: "button_two"
+            label: "Button"
+            type: "object"
+            fields:
+              - { name: "title", label: "title", type: "string" }
+              - { name: "url", label: "Url", type: "string" }
+
+  - name: "about"
+    label: "About page"
+    path: "_src/over-ons.md"
+    type: file
+    fields:
+      - { name: title, label: "Pagina title", type: "string" }
+      - { name: description, label: "Pagina beschrijving", type: "string" }
+
+      - name: "metas"
+        label: "metas"
+        type: "object"
+        fields:
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "description", label: "Description", type: "string" }
+
+      - name: "section_hero"
+        label: "Hero Block"
+        type: "object"
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "body", label: "Body", type: "string" }
+          - { name: "image", label: "Image", type: "image", default: "/images/undraw_pure-love.svg" }
+          - { name: "alt", label: "Image description", type: "string" }
+
+
+      - name: "section_one"
+        label: "Location Block"
+        type: "object"
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "body", label: "Body", type: "string" }
+          - { name: "image", label: "Image", type: "image", default: "/images/undraw_partying.svg" }
+          - { name: "alt", label: "Image description", type: "string" }
+
+      - name: "section_two"
+        label: "Team Block"
+        type: "object"
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "body", label: "Body", type: "string" }
+          - { name: "image", label: "Image", type: "image", default: "/images/undraw_team.svg" }
+          - { name: "alt", label: "Image description", type: "string" }
+
+
+      - name: "section_three"
+        label: "Werkwijzen Block"
+        type: "object"
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "body", label: "Body", type: "string" }
+          - { name: "image", label: "Image", type: "image", default: "/images/undraw_dreamer.svg" }
+          - { name: "alt", label: "Image description", type: "string" }
+
+      - name: "section_four"
+        label: "Ervaringen Block"
+        type: "object"
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "body", label: "Body", type: "string" }
+          - { name: "image", label: "Image", type: "image", default: "/images/undraw_effortless-love.svg" }
+          - { name: "alt", label: "Image description", type: "string" }
+
+  - name: "gallery"
+    label: "Gallery"
+    path: "_src/galerij.md"
+    type: file
+    fields:
+      - { name: title, label: "Pagina title", type: "string" }
+      - { name: description, label: "Pagina beschrijving", type: "string" }
+
+      - name: "metas"
+        label: "metas"
+        type: "object"
+        fields:
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "description", label: "Description", type: "string" }
+
+      - name: section_gallery
+        label: Galerij block
+        type: object
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - name: "images"
+            label: "Gallery images"
+            type: "image"
+            options:
+              multiple: true
+              multiple.max: 6
+
+
+  - name: "services"
+    label: "Services page"
+    path: "_src/diensten.md"
+    type: file
+    fields:
+      - { name: title, label: "Pagina title", type: "string" }
+      - { name: description, label: "Pagina beschrijving", type: "string" }
+
+      - name: "metas"
+        label: "metas"
+        type: "object"
+        fields:
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "description", label: "Description", type: "string" }
+
+      - name: "section_services"
+        label: "Services block"
+        type: "object"
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+
+
+  - name: "contact"
+    label: "Contact page"
+    path: "_src/contact.md"
+    type: file
+    fields:
+      - { name: title, label: "Pagina title", type: "string" }
+      - { name: description, label: "Pagina beschrijving", type: "string" }
+
+      - name: "metas"
+        label: "metas"
+        type: "object"
+        fields:
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "description", label: "Description", type: "string" }
+
+      - { name: body, label: "content", type: "text" }
+
+
+  - name: "offerte"
+    label: "Quote page"
+    path: "_src/offerte.md"
+    type: file
+    fields:
+      - { name: title, label: "Pagina title", type: "string" }
+      - { name: description, label: "Pagina beschrijving", type: "string" }
+
+      - name: "metas"
+        label: "metas"
+        type: "object"
+        fields:
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "description", label: "Description", type: "string" }
+
+      - name: "section_offerte"
+        label: "Offerte block"
+        type: "object"
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+
+
+  - name: "algemene-voorwaarden"
+    label: "Algemene voorwaarden"
+    path: "_src/algemene-voorwaarden.md"
+    type: file
+    fields:
+      - { name: "title", label: "Title", type: "string" }
+      - { name: "description", label: "Description", type: "string" }
+
+      - name: "metas"
+        label: "metas"
+        type: "object"
+        fields:
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "description", label: "Description", type: "string" }
+
+      - { name: "body", label: "Body", type: rich-text }
 
 
 
