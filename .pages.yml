@@ -302,7 +302,7 @@ content:
 
 
 
-  - name: "services"
+  - name: "diensten"
     label: "Services"
     path: "_src/diensten"
     type: collection
