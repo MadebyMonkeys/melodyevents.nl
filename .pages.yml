@@ -100,7 +100,6 @@ content:
             type: image
             options:
               multiple:
-                min: 1
                 max: 6
 
       - name: section_cta
