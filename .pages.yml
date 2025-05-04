@@ -5,7 +5,7 @@ content:
   - name: "settings"
     label: "Site Settings"
     path: "_src"
-    type: file
+    type: collection
     options:
       path: "_data"
       extentions: [yaml]
