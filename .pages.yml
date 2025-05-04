@@ -29,7 +29,6 @@ content:
       - { name: "email", label: "Email", type: "string" }
       - { name: "kvk_nummer", label: "Kvk nummer", type: "string" }
       - { name: "btw_nummer", label: "BTW nummer", type: "string" }
-          
       - name: "address"
         label: "Adress"
         type: "object"
@@ -37,3 +36,95 @@ content:
           - { name: "street", label: "Straat", type: "string" }
           - { name: "zipcode", label: "Postcode", type: "string" }
           - { name: "city", label: "Stad", type: "string" }
+    
+  - name: "homepage"
+    label: "Home page"
+    path: "_src/index.md"
+    type: file
+    fields:
+      - { name: title, label: "Pagina title", type: "string" }
+      - { name: description, label: "Pagina beschrijving", type: "string" }
+
+      - name: "metas"
+        label: "metas"
+        type: "object"
+        fields:
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "description", label: "Description", type: "string" }
+
+      - name: section_hero
+        label: Hero Block
+        type: object
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "image", label: "Image", type: "image" }
+          - { name: "alt", label: "Image description", type: "string" }
+
+
+      - name: section_services
+        label: Diensten block
+        type: object
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - name: "list"
+            label: "Hoofd diensten"
+            type: "list"
+            fields:
+              - { name: "name", label: "Name", type: "string" }
+              - { name: "icon", label: "Icon", type: "image" }
+              - { name: "body", label: "Body", type: "text" }
+              - { name: "url", label: "Url", type: "string" }
+
+
+      - name: section_about
+        label: About Block
+        type: object
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "image", label: "Image", type: "image" }
+          - { name: "alt", label: "Image description", type: "string" }
+
+
+      - name: section_gallery
+        label: Galerij block
+        type: object
+        fields:
+          - { name: "block_title", label: "Block title", type: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - name: "images"
+            label: "Gallery images"
+            type: image
+            options:
+              multiple:
+                min: 1
+
+      - name: section_cta
+        label: Galerij block
+        type: object
+        fields:
+          - { name: "block_one_title", label: "Block 1 title", type: "string" }
+          - { name: "block_one_body", label: "text", type: "text" }
+          - name: "button_one"
+            label: "Button"
+            type: "object"
+            fields:
+              - { name: "title", label: "title", type: "string" }
+              - { name: "url", label: "Url", type: "string" }
+
+          - { name: "block_two_title", label: "Block 1 title", type: "string" }
+          - { name: "block_two_body", label: "text", type: "text" }
+          - name: "button_two"
+            label: "Button"
+            type: "object"
+            fields:
+              - { name: "title", label: "title", type: "string" }
+              - { name: "url", label: "Url", type: "string" }
+    
+    
+  
+
+
+  
