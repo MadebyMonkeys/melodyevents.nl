@@ -6,7 +6,7 @@ content:
     label: "Configuratie"
     path: "_src/_data"
     type: file
-    options:
+    option:
       multiple: true
     fields:
       - name: "settings"
