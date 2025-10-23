@@ -206,8 +206,18 @@ content:
     path: "_src/galerij.md"
     type: file
     fields:
+      - { name: layout, label: "Layout", type: "string", default: "layouts/pages/gallery.vto" }
       - { name: title, label: "Pagina title", type: "string" }
       - { name: description, label: "Pagina beschrijving", type: "string" }
+
+      - name: "menu"
+        label: "menu"
+        type: "object"
+        fields:
+          - { name: "visible", label: "Visible", type: "boolean" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "url", label: "Url", type: "string" }
+          - { name: "order", label: "Order", type: "string" }
 
       - name: "metas"
         label: "metas"
@@ -235,8 +245,18 @@ content:
     path: "_src/diensten.md"
     type: file
     fields:
+      - { name: layout, label: "Layout", type: "string", default: "layouts/pages/services/list.vto" }
       - { name: title, label: "Pagina title", type: "string" }
       - { name: description, label: "Pagina beschrijving", type: "string" }
+
+      - name: "menu"
+        label: "menu"
+        type: "object"
+        fields:
+          - { name: "visible", label: "Visible", type: "boolean" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "url", label: "Url", type: "string" }
+          - { name: "order", label: "Order", type: "string" }
 
       - name: "metas"
         label: "metas"
@@ -258,8 +278,18 @@ content:
     path: "_src/contact.md"
     type: file
     fields:
+      - { name: layout, label: "Layout", type: "string", default: "layouts/pages/contact.vto" }
       - { name: title, label: "Pagina title", type: "string" }
       - { name: description, label: "Pagina beschrijving", type: "string" }
+
+      - name: "menu"
+        label: "menu"
+        type: "object"
+        fields:
+          - { name: "visible", label: "Visible", type: "boolean" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "url", label: "Url", type: "string" }
+          - { name: "order", label: "Order", type: "string" }
 
       - name: "metas"
         label: "metas"
@@ -276,8 +306,18 @@ content:
     path: "_src/offerte.md"
     type: file
     fields:
+      - { name: layout, label: "Layout", type: "string", default: "layouts/pages/offerte.vto" }
       - { name: title, label: "Pagina title", type: "string" }
       - { name: description, label: "Pagina beschrijving", type: "string" }
+
+      - name: "menu"
+        label: "menu"
+        type: "object"
+        fields:
+          - { name: "visible", label: "Visible", type: "boolean" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "url", label: "Url", type: "string" }
+          - { name: "order", label: "Order", type: "string" }
 
       - name: "metas"
         label: "metas"
@@ -299,6 +339,7 @@ content:
     path: "_src/algemene-voorwaarden.md"
     type: file
     fields:
+      - { name: layout, label: "Layout", type: "string", default: "layouts/pages/voorwaarden.vto" }
       - { name: "title", label: "Title", type: "string" }
       - { name: "description", label: "Description", type: "string" }
     
