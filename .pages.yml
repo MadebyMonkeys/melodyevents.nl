@@ -136,7 +136,7 @@ content:
         label: "metas"
         type: "object"
         fields:
-          - { name: "title", label: "Title", type: "string" default: "layouts/pages/about.vto" }
+          - { name: "title", label: "Title", type: "string", default: "layouts/pages/about.vto" }
           - { name: "description", label: "Description", type: "string" }
 
       - name: "section_hero"
