@@ -1,4 +1,5 @@
 ---
+layout: layouts/pages/about.vto
 title: Over ons
 description: Voor al uw evenementen groot of klein moet u bij Melody Events zijn.
 metas:
