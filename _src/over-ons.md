@@ -2,6 +2,11 @@
 layout: layouts/pages/about.vto
 title: Over ons
 description: Voor al uw evenementen groot of klein moet u bij Melody Events zijn.
+menu:
+  visible: true
+  title: Over ons
+  url: /over-ons
+  order: "2"
 metas:
   title: =title
   description: =description
