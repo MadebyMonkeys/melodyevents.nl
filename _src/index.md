@@ -13,7 +13,7 @@ section_hero:
   block_title: Melody Events
   title: De perfecte locatie voor jouw droomfeest. Stijlvol, sfeervol en zorgeloos
     genieten.
-  image: https://www.melodyevents.nl/img/hero-image.webp
+  image: uploads/IMG_3839.webp
   alt: Hero image
 section_services:
   block_title: Diensten
@@ -21,7 +21,7 @@ section_services:
 section_about:
   block_title: Over ons
   title: Wie zijn wij?
-  image: /uploads/melody-2.webp
+  image: uploads/IMG_3863.webp
   alt: about image
 section_gallery:
   block_title: De ruimte
